@@ -1,6 +1,11 @@
 import { Outlet, Link, useLocation } from "react-router";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Menu, X, Command } from "lucide-react";
+import { Suspense, lazy, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+
+const CommandPalette = lazy(() =>
+  import("./CommandPalette").then((m) => ({ default: m.CommandPalette })),
+);
 
 export function Layout() {
   const location = useLocation();
@@ -17,15 +22,18 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#fafaf8] text-[#2a2a2a]">
-      <nav className="border-b border-[#e5e5e0] bg-[#fafaf8]">
+      <Suspense fallback={null}>
+        <CommandPalette />
+      </Suspense>
+      <nav className="border-b border-[#e5e5e0] bg-[#fafaf8] sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-lg tracking-tight" onClick={closeMobileMenu}>
-              Portfolio
+              Lucas Morais
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex gap-6 lg:gap-8">
+            <div className="hidden md:flex items-center gap-6 lg:gap-8">
               <Link
                 to="/"
                 className={`text-sm tracking-wide transition-colors ${
@@ -76,6 +84,17 @@ export function Layout() {
               >
                 Contact
               </Link>
+              <button
+                onClick={() =>
+                  document.dispatchEvent(
+                    new KeyboardEvent("keydown", { key: "k", metaKey: true }),
+                  )
+                }
+                className="hidden lg:flex items-center gap-1.5 text-xs text-[#888] border border-[#e5e5e0] rounded-sm px-2 py-1 hover:border-[#2a2a2a] hover:text-[#2a2a2a] transition-colors"
+                aria-label="Open command palette"
+              >
+                <Command size={12} />K
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -145,7 +164,17 @@ export function Layout() {
         </div>
       </nav>
       <main>
-        <Outlet />
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
       </main>
     </div>
   );

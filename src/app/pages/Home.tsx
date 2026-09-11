@@ -3,6 +3,9 @@ import { ArrowRight, Download } from "lucide-react";
 import cmsThumbnail from "../../imports/web-portfolio-cms-1.png";
 import orderingThumbnail from "../../imports/web-portfolio-2.jpg";
 import profileImage from "../../imports/profile-1.jpg";
+import { Reveal } from "../components/Reveal";
+import { SpotlightGlow } from "../components/SpotlightGlow";
+import { handleSpotlightMove } from "../lib/spotlight";
 
 export function Home() {
   return (
@@ -10,17 +13,20 @@ export function Home() {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-24 border-b border-[#e5e5e0]">
         <div className="max-w-3xl">
-          <p className="text-base sm:text-lg text-[#666] italic mb-6 sm:mb-8">
-            Lucas Morais
-          </p>
+          <div className="flex items-center gap-2 mb-6 sm:mb-8">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            </span>
+            <span className="text-sm text-[#666]">Open to new opportunities</span>
+          </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-4 sm:mb-6 leading-tight">
-            Senior Product Designer focused on growth, scale, and operational
-            efficiency
+            I design systems for platforms that have outgrown themselves.
           </h1>
           <p className="text-base sm:text-lg text-[#666] mb-6 sm:mb-8 leading-relaxed">
-            Experienced in digital transformation, QSR, B2B e-commerce, and
-            AI-assisted workflows. I design systems that enable teams to move
-            faster and businesses to scale efficiently.
+            Eight years leading product design for restaurant tech and B2B
+            platforms — cutting hundreds of components down to dozens, and
+            turning one bad screen into 33% more conversion.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
@@ -44,31 +50,34 @@ export function Home() {
 
       {/* What I Bring */}
       <section className="py-12 sm:py-16 md:py-24 border-b border-[#e5e5e0]">
-        <h2 className="text-2xl sm:text-3xl mb-8 sm:mb-12 tracking-tight">What I bring</h2>
+        <Reveal>
+          <h2 className="text-2xl sm:text-3xl mb-8 sm:mb-12 tracking-tight">How I work</h2>
+        </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
-          <div>
-            <h3 className="text-xl mb-3 tracking-tight">Strategic thinking</h3>
+          <Reveal delay={0}>
+            <h3 className="text-xl mb-3 tracking-tight">Systems over screens</h3>
             <p className="text-[#666] leading-relaxed">
-              I connect design decisions to business outcomes, balancing user
-              needs with operational constraints and growth objectives.
+              I'd rather ship one component with ten configurations than ten
+              one-off screens. Slower on day one, faster for the next two
+              years.
             </p>
-          </div>
-          <div>
-            <h3 className="text-xl mb-3 tracking-tight">Systems design</h3>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <h3 className="text-xl mb-3 tracking-tight">Data before opinions</h3>
             <p className="text-[#666] leading-relaxed">
-              I build scalable component architectures and design systems that
-              empower teams to ship faster without sacrificing quality.
+              The best redesign I shipped this year didn't start with a
+              hunch — it started with a drop-off number in the funnel. I look
+              for that number before I open Figma.
             </p>
-          </div>
-          <div>
-            <h3 className="text-xl mb-3 tracking-tight">
-              Operational efficiency
-            </h3>
+          </Reveal>
+          <Reveal delay={0.16}>
+            <h3 className="text-xl mb-3 tracking-tight">Built for non-designers too</h3>
             <p className="text-[#666] leading-relaxed">
-              I optimize workflows and reduce friction in both user experiences
-              and team processes, enabling sustainable growth at scale.
+              Half the people using what I ship aren't designers — brand
+              managers, marketers, ops staff. If they need me to update a
+              banner, the tool failed.
             </p>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -85,48 +94,61 @@ export function Home() {
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link
-            to="/case-study/cms-migration"
-            className="group border border-[#e5e5e0] rounded-sm overflow-hidden hover:border-[#2a2a2a] transition-colors"
-          >
-            <div className="aspect-video overflow-hidden">
-              <img
-                src={cmsThumbnail}
-                alt="CMS Migration for Multi-Brand Restaurant Platform"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl mb-2 tracking-tight group-hover:text-[#666] transition-colors">
-                CMS Migration for a Multi-Brand Restaurant Platform
-              </h3>
-              <p className="text-[#666] text-sm leading-relaxed">
-                Legacy CMS migration for multiple restaurant brands, enabling
-                scalable brand customization and autonomy for non-design teams.
-              </p>
-            </div>
-          </Link>
-          <Link
-            to="/case-study/ordering-optimization"
-            className="group border border-[#e5e5e0] rounded-sm overflow-hidden hover:border-[#2a2a2a] transition-colors"
-          >
-            <div className="aspect-video overflow-hidden">
-              <img
-                src={orderingThumbnail}
-                alt="Ordering Experience Optimization for Restaurant Platform"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl mb-2 tracking-tight group-hover:text-[#666] transition-colors">
-                Ordering Experience Optimization for a Restaurant Platform
-              </h3>
-              <p className="text-[#666] text-sm leading-relaxed">
-                Redesigned ordering flow to reduce friction, increase conversion
-                from 6% to 8%, and improve loyalty program adoption.
-              </p>
-            </div>
-          </Link>
+          <Reveal>
+            <Link
+              to="/case-study/cms-migration"
+              onMouseMove={handleSpotlightMove}
+              className="group relative block border border-[#e5e5e0] rounded-sm overflow-hidden hover:border-[#2a2a2a] transition-colors"
+            >
+              <SpotlightGlow />
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={cmsThumbnail}
+                  alt="CMS Migration for Multi-Brand Restaurant Platform"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl mb-2 tracking-tight group-hover:text-[#666] transition-colors">
+                  CMS Migration for a Multi-Brand Restaurant Platform
+                </h3>
+                <p className="text-[#666] text-sm leading-relaxed">
+                  Migrated a legacy CMS for 8 restaurant brands — cut unique
+                  components by 60% and let marketing teams update content
+                  without design in the loop.
+                </p>
+              </div>
+            </Link>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <Link
+              to="/case-study/ordering-optimization"
+              onMouseMove={handleSpotlightMove}
+              className="group relative block border border-[#e5e5e0] rounded-sm overflow-hidden hover:border-[#2a2a2a] transition-colors"
+            >
+              <SpotlightGlow />
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={orderingThumbnail}
+                  alt="Ordering Experience Optimization for Restaurant Platform"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl mb-2 tracking-tight group-hover:text-[#666] transition-colors">
+                  Ordering Experience Optimization for a Restaurant Platform
+                </h3>
+                <p className="text-[#666] text-sm leading-relaxed">
+                  Moved location selection out of the critical path. Overall
+                  conversion went from 6% to 8%.
+                </p>
+              </div>
+            </Link>
+          </Reveal>
         </div>
       </section>
 
@@ -134,33 +156,36 @@ export function Home() {
       <section className="py-12 sm:py-16 md:py-24">
         <h2 className="text-2xl sm:text-3xl mb-8 sm:mb-12 tracking-tight">About</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2">
+          <Reveal className="lg:col-span-2">
             <p className="text-lg text-[#666] leading-relaxed mb-4">
-              I'm a Senior Product Designer with 8+ years of experience focused on
-              digital products that need to grow, scale, and operate efficiently.
-              My experience spans digital transformation consultancies, QSR, and
-              B2B e-commerce, where I've worked on products with complex
-              constraints, multiple stakeholders, and meaningful business goals.
+              I've spent most of the last five years inside one product: a
+              restaurant platform that grew from one brand to eight while I
+              rebuilt the systems underneath it. Before that, digital
+              transformation consulting and conversational design for
+              chatbots.
             </p>
             <p className="text-lg text-[#666] leading-relaxed mb-4">
-              I believe good design is about creating systems and experiences that
-              help products become more valuable for users and businesses.
+              I like the parts of design work that are a little unglamorous —
+              the CMS nobody wants to touch, the edge case in the system, the
+              screen everyone assumed was fine until the data said otherwise.
             </p>
             <Link
               to="/about"
               className="inline-flex items-center gap-2 text-sm text-[#2a2a2a] hover:text-[#666] transition-colors"
             >
-              Read more about my experience
+              More about my background
               <ArrowRight size={14} />
             </Link>
-          </div>
-          <div className="aspect-square rounded-sm overflow-hidden">
+          </Reveal>
+          <Reveal delay={0.1} className="aspect-square rounded-sm overflow-hidden">
             <img
               src={profileImage}
               alt="Profile photo"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
-          </div>
+          </Reveal>
         </div>
       </section>
     </div>

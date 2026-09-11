@@ -19,11 +19,11 @@ export function Resume() {
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Professional Summary</h2>
         <p className="text-[#666] leading-relaxed">
-          Senior Product Designer with experience across digital transformation,
-          QSR, B2B e-commerce, conversational interfaces, and international
-          product contexts. Focused on scalable, user-centered solutions that
-          balance business goals, operational realities, and technical
-          constraints.
+          Product designer with 8 years across restaurant tech, B2B
+          e-commerce, and conversational interfaces. Currently focused on
+          design systems and growth for a multi-brand restaurant platform —
+          the kind of work that's more plumbing than polish, and usually pays
+          off later.
         </p>
       </section>
 
@@ -54,43 +54,36 @@ export function Resume() {
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
                 <span>
-                  Since 2022, played a strategic role in client relationships and
-                  design operations, helping communicate the value of UX and
-                  collaborating with designers from specialties such as UX
-                  Research, Visual Design, and UX Writing
+                  Since 2022, lead client relationships and design operations
+                  for the account, coordinating with UX Research, Visual
+                  Design, and UX Writing specialists
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
                 <span>
-                  Work as a UX design reference across products in areas such as
-                  data analytics, internal management platforms, mobile community
-                  apps, restaurant and QSR platforms, e-commerce, and
-                  international product contexts
+                  UX design reference across data analytics, internal
+                  management platforms, mobile community apps, restaurant/QSR
+                  platforms, e-commerce, and international products
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
                 <span>
-                  Facilitated multiple workshops for early discovery and
-                  contributed to continuous discovery throughout longer product
-                  engagements
+                  Facilitate discovery workshops and support continuous
+                  discovery on longer engagements
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
                 <span>
-                  Participate in the mentorship program, supporting new designers
-                  in building confidence across the full design process and
-                  workshop facilitation
+                  Mentor new designers on the design process and workshop
+                  facilitation
                 </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Contribute monthly to the Design Guild with content focused on
-                  soft skills development
-                </span>
+                <span>Write monthly for the internal Design Guild on soft skills</span>
               </li>
             </ul>
           </div>
@@ -117,10 +110,8 @@ export function Resume() {
               <li className="flex gap-3">
                 <span className="text-[#2a2a2a] mt-1">•</span>
                 <span>
-                  Collaborated closely with stakeholders and subject matter
-                  experts to shape strong conversational experiences across
-                  platforms such as WhatsApp, Facebook Messenger, Google Business
-                  Messenger, and Web
+                  Designed conversational experiences across WhatsApp,
+                  Facebook Messenger, Google Business Messenger, and web
                 </span>
               </li>
               <li className="flex gap-3">

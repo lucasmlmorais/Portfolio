@@ -8,7 +8,7 @@ export function NotFound() {
         <h1 className="text-5xl sm:text-6xl mb-4 sm:mb-6 tracking-tight">404</h1>
         <h2 className="text-xl sm:text-2xl mb-3 sm:mb-4 tracking-tight">Page not found</h2>
         <p className="text-sm sm:text-base text-[#666] mb-6 sm:mb-8 max-w-md px-4">
-          The page you're looking for doesn't exist or has been moved.
+          That page doesn't exist — or it moved and nobody updated the link.
         </p>
         <Link
           to="/"

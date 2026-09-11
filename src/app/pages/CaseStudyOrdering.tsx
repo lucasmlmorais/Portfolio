@@ -2,6 +2,8 @@ import { Link } from "react-router";
 import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { ImageModal } from "../components/ImageModal";
+import { Reveal } from "../components/Reveal";
+import { ReadingProgress } from "../components/ReadingProgress";
 import orderingHero from "../../imports/ordering_experience.png";
 import orderingProblem from "../../imports/problem_2.png";
 import orderingSolution from "../../imports/solution_2.png";
@@ -11,6 +13,7 @@ export function CaseStudyOrdering() {
 
   return (
     <>
+      <ReadingProgress />
       <ImageModal
         isOpen={!!modalImage}
         onClose={() => setModalImage(null)}
@@ -30,8 +33,9 @@ export function CaseStudyOrdering() {
         Ordering Experience Optimization for a Restaurant Platform
       </h1>
       <p className="text-base sm:text-lg md:text-xl text-[#666] mb-8 sm:mb-12 leading-relaxed">
-        Redesigned ordering flow to reduce friction, increase conversion from 6%
-        to 8%, and improve loyalty program adoption.
+        Conversion was stuck at 6%. I traced it to one screen — forcing
+        location selection before the menu — and fixing it got conversion to
+        8%.
       </p>
 
       <div
@@ -46,6 +50,7 @@ export function CaseStudyOrdering() {
       </div>
 
       {/* Overview */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Overview</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -63,35 +68,36 @@ export function CaseStudyOrdering() {
           </div>
         </div>
         <p className="text-[#666] leading-relaxed">
-          After launching custom websites for the group's main brands, the goal
-          was to increase both conversion and online revenue. Analysis revealed
-          that conversion was significantly higher among app users and logged-in
-          users than among anonymous visitors, yet overall conversion sat at only
-          6%. The challenge was to simplify the login process and better integrate
-          logged-in features into the main user journey.
+          After launching dedicated sites for the group's main brands, the
+          goal shifted to growing conversion and online revenue. Logged-in
+          users converted far better than anonymous visitors, but overall
+          conversion sat at just 6%. The fix meant simplifying login and
+          pulling logged-in features into the main journey, instead of
+          hiding them behind it.
         </p>
       </section>
+      </Reveal>
 
       {/* Problem */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Problem</h2>
         <p className="text-[#666] leading-relaxed mb-4">
-          Product metrics revealed that conversion was significantly higher among
-          logged-in users compared to anonymous visitors. However, the share of
-          logged-in users was relatively low compared to overall traffic.
+          Logged-in users converted significantly better than anonymous
+          visitors — but they were a small share of total traffic.
         </p>
         <p className="text-[#666] leading-relaxed mb-4">
-          The ordering flow had major friction, especially in location selection.
-          Users had to choose a restaurant location before seeing the menu,
-          creating an unnecessary decision point that caused many to abandon.
-          Overall conversion sat at only 6%—far below industry benchmarks.
+          The bigger issue was the ordering flow itself: users had to pick a
+          restaurant location before they could even see the menu. That one
+          decision point, unrelated to what they actually wanted to order,
+          was quietly costing conversions. Overall conversion sat at 6%,
+          well below industry benchmarks.
         </p>
         <p className="text-[#666] leading-relaxed mb-4">
-          The loyalty program, despite offering significant value, had low
-          adoption because it wasn't surfaced at strategic moments. Registration
-          and login screens had already received criticism in heuristic reviews,
-          and logged-in features were buried in the experience, making it
-          difficult for users to understand their value.
+          The loyalty program had real value and low adoption, because it
+          wasn't surfaced anywhere that mattered. Registration and login had
+          already drawn criticism in heuristic reviews, and logged-in
+          features were buried where new users would never find them.
         </p>
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
@@ -100,135 +106,115 @@ export function CaseStudyOrdering() {
           <img
             src={orderingProblem}
             alt="Original flow diagram"
+            loading="lazy"
+            decoding="async"
             className="w-full h-auto"
           />
         </div>
       </section>
+      </Reveal>
 
       {/* My Role */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">My role</h2>
         <p className="text-[#666] leading-relaxed mb-4">
-          As Senior Product Designer, I led the redesign effort, working closely
-          with product management, engineering, and analytics teams to:
+          As Senior Product Designer, I led the redesign with product,
+          engineering, and analytics:
         </p>
         <ul className="space-y-3 text-[#666] leading-relaxed">
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Analyze user behavior data to identify specific drop-off points
-              and friction areas
-            </span>
+            <span>Analyzed behavior data to find where users dropped off</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Conduct user research to understand mental models around ordering
-              and location selection
-            </span>
+            <span>Ran research to understand how people thought about location and ordering</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Design and test alternative flows that reduced friction while
-              maintaining necessary functionality
-            </span>
+            <span>Designed and tested flows that cut friction without losing functionality</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Integrate loyalty touchpoints strategically throughout the
-              experience
-            </span>
+            <span>Wove loyalty touchpoints into the flow instead of a separate page</span>
           </li>
         </ul>
       </section>
+      </Reveal>
 
       {/* Constraints */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Constraints</h2>
         <ul className="space-y-3 text-[#666] leading-relaxed">
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Needed to support both pickup and delivery options with
-              location-specific pricing and availability
-            </span>
+            <span>Pickup and delivery, each with location-specific pricing and availability</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Required compatibility with existing POS systems across hundreds of
-              restaurant locations
-            </span>
+            <span>Compatible with POS systems across hundreds of locations</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Had to maintain ADA compliance and improve performance metrics
-            </span>
+            <span>ADA compliant, with performance as a hard requirement</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Couldn't disrupt the experience for existing loyal customers while
-              improving it for new ones
-            </span>
+            <span>Couldn't disrupt the experience for existing loyal customers</span>
           </li>
         </ul>
       </section>
+      </Reveal>
 
       {/* Strategic Approach */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Strategic approach</h2>
         <p className="text-[#666] leading-relaxed mb-6">
-          Based on data showing logged-in users had significantly higher
-          conversion, we defined an initiative focused on integrating logged-in
-          features into the primary flow and acquiring more logged-in users. We
-          grouped improvements into smaller workstreams, ordered by technical
-          dependencies and expected impact.
+          Data showed logged-in users converted better, so the whole
+          initiative centered on getting more users logged in — and giving
+          them a reason to. We split the work into smaller streams, ordered
+          by technical dependencies and expected impact.
         </p>
         <div className="bg-[#f0f0ec] p-6 rounded-sm mb-6">
           <h3 className="text-lg mb-3 tracking-tight">
             Redesigned registration and login
           </h3>
           <p className="text-[#666] leading-relaxed">
-            Customized registration and login screens for each brand, reducing
-            friction while adding value through birthday promotion fields. This
-            addressed criticism from previous heuristic reviews and created a
-            smoother path to account creation.
+            Customized registration per brand and added a birthday field
+            that gave users an immediate reason to sign up, while fixing
+            the friction flagged in earlier heuristic reviews.
           </p>
         </div>
         <div className="bg-[#f0f0ec] p-6 rounded-sm mb-6">
           <h3 className="text-lg mb-3 tracking-tight">
-            Integrated logged-in features into main flow
+            Moved logged-in features into the main flow
           </h3>
           <p className="text-[#666] leading-relaxed">
-            Moved features like reordering previous items, saving favorites, and
-            loyalty program benefits from buried pages into the primary ordering
-            flow. Made these features visible to anonymous visitors alongside
-            clear calls to action for creating an account.
+            Reordering, favorites, and loyalty benefits moved out of buried
+            pages into the primary ordering flow — visible to anonymous
+            users too, next to a clear prompt to create an account.
           </p>
         </div>
         <div className="bg-[#f0f0ec] p-6 rounded-sm mb-6">
           <h3 className="text-lg mb-3 tracking-tight">
-            Bypass the location friction point
+            Bypassed the location friction point
           </h3>
           <p className="text-[#666] leading-relaxed">
-            Instead of forcing location selection upfront, allowed users to
-            browse the menu first. Location selection was integrated at checkout
-            with smart defaults based on geolocation and order history.
+            Let people browse the menu first. Location moved to checkout,
+            pre-filled from geolocation or order history.
           </p>
         </div>
         <div className="bg-[#f0f0ec] p-6 rounded-sm mb-6">
           <h3 className="text-lg mb-3 tracking-tight">
-            Clear value communication
+            Made the value visible
           </h3>
           <p className="text-[#666] leading-relaxed">
-            Created touchpoints throughout the experience to help users
-            understand the value of creating an account and logging in—showing
-            personalized savings, convenience features, and loyalty benefits at
-            strategic moments.
+            Added moments throughout the flow that showed the actual
+            savings and convenience of logging in, instead of asking for an
+            account on faith.
           </p>
         </div>
         <div
@@ -238,35 +224,36 @@ export function CaseStudyOrdering() {
           <img
             src={orderingSolution}
             alt="Redesigned flow diagram"
+            loading="lazy"
+            decoding="async"
             className="w-full h-auto"
           />
         </div>
       </section>
+      </Reveal>
 
       {/* Key Design Decisions */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Key design decisions</h2>
         <div className="space-y-8">
           <div>
             <h3 className="text-lg mb-3 tracking-tight">
-              Fake door approach for logged-in features
+              Fake door for logged-in features
             </h3>
             <p className="text-[#666] leading-relaxed">
-              Made logged-in features visible to anonymous visitors alongside
-              calls to action for creating an account. This created incentive
-              points that increased login and registration rates by 10% to 20%
-              while helping users understand the value of accounts.
+              Showed logged-in-only features to anonymous visitors, next to
+              a clear sign-up prompt. Login and registration rates rose 10
+              to 20%.
             </p>
           </div>
           <div>
             <h3 className="text-lg mb-3 tracking-tight">
-              Feature integration into primary flow
+              Feature placement over feature design
             </h3>
             <p className="text-[#666] leading-relaxed">
-              Moved reorder, favorites, and loyalty benefits from separate pages
-              into the main ordering journey. This increased usage of these
-              features by 30% to 60% depending on the feature, making them core
-              to the experience rather than buried utilities.
+              Reorder, favorites, and loyalty moved from separate pages into
+              the main journey. Usage of those features rose 30 to 60%.
             </p>
           </div>
           <div>
@@ -274,112 +261,78 @@ export function CaseStudyOrdering() {
               Brand-customized registration with incentives
             </h3>
             <p className="text-[#666] leading-relaxed">
-              Customized registration screens for each brand and added birthday
-              promotion fields, creating immediate value for users while
-              collecting useful marketing data. This balanced business needs with
-              user benefit.
+              Registration screens customized per brand, with a birthday
+              field that gave users value in exchange for the data.
             </p>
           </div>
           <div>
             <h3 className="text-lg mb-3 tracking-tight">
-              Research and hypothesis testing process
+              Benchmark, test, then ship
             </h3>
             <p className="text-[#666] leading-relaxed">
-              For each improvement, we defined clear goals, benchmarked existing
-              patterns in other products, conducted usability testing with
-              interactive prototypes, and ran A/B tests with real users—ensuring
-              decisions were validated before full implementation.
+              Every change got a clear goal, a benchmark against comparable
+              products, a round of usability testing, and an A/B test
+              before full rollout.
             </p>
           </div>
         </div>
       </section>
+      </Reveal>
 
       {/* Outcomes */}
+      <Reveal>
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Outcomes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-[#f0f0ec] p-6 rounded-sm">
-            <div className="text-3xl mb-2">6% → 8%</div>
-            <p className="text-[#666]">
-              Overall conversion rate increased by 33%, resulting in significant
-              revenue growth
-            </p>
-          </div>
-          <div className="bg-[#f0f0ec] p-6 rounded-sm">
-            <div className="text-3xl mb-2">10-20%</div>
-            <p className="text-[#666]">
-              Increase in login and registration rates through strategic
-              touchpoints and value communication
-            </p>
-          </div>
-          <div className="bg-[#f0f0ec] p-6 rounded-sm">
-            <div className="text-3xl mb-2">30-60%</div>
-            <p className="text-[#666]">
-              Increase in feature usage (reorder, favorites, loyalty benefits) by
-              integrating them into the main flow
-            </p>
-          </div>
-          <div className="bg-[#f0f0ec] p-6 rounded-sm">
-            <div className="text-3xl mb-2">100%</div>
-            <p className="text-[#666]">
-              ADA compliance achieved with improved screen reader support
-            </p>
-          </div>
+          {[
+            { stat: "6% → 8%", label: "Overall conversion — a 33% relative increase" },
+            { stat: "10–20%", label: "More logins and registrations from strategic touchpoints" },
+            { stat: "30–60%", label: "More usage of reorder, favorites, and loyalty features" },
+            { stat: "100%", label: "ADA compliant, with improved screen reader support" },
+          ].map((item, index) => (
+            <Reveal key={item.stat} delay={index * 0.08}>
+              <div className="bg-[#f0f0ec] p-6 rounded-sm h-full">
+                <div className="text-3xl mb-2">{item.stat}</div>
+                <p className="text-[#666]">{item.label}</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
         <p className="text-[#666] leading-relaxed">
-          By simplifying the login process and better integrating logged-in
-          features into the main journey, we transformed the ordering experience.
-          More users created accounts, used loyalty benefits, and completed
-          purchases—creating sustainable growth through improved user engagement.
+          Making account benefits visible earned more signups than
+          requiring them ever did.
         </p>
       </section>
+      </Reveal>
 
       {/* Learnings */}
+      <Reveal>
       <section className="mb-12 sm:mb-16">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Learnings</h2>
         <ul className="space-y-4 text-[#666] leading-relaxed">
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Product metrics can reveal opportunities hidden in plain sight—the
-              insight that logged-in users had higher conversion became the
-              foundation for our entire strategy
-            </span>
+            <span>A metric can hide a strategy in plain sight — logged-in users' higher conversion became the whole plan</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Making features visible to anonymous users (fake door approach) can
-              drive adoption by showing value before requiring commitment—this
-              increased registration rates by 10-20%
-            </span>
+            <span>Showing value before asking for commitment lifted registrations by 10–20%</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Feature placement matters as much as feature design—moving
-              capabilities into the main flow increased usage by 30-60% compared
-              to when they were buried in separate pages
-            </span>
+            <span>Placement matters as much as design — the same features saw 30–60% more use once they left buried pages</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Breaking large initiatives into smaller workstreams ordered by
-              dependencies and impact helps teams deliver value incrementally
-              while learning along the way
-            </span>
+            <span>Splitting a big initiative into workstreams ordered by dependency and impact means shipping value continuously, not waiting for a big bang</span>
           </li>
           <li className="flex gap-3">
             <span className="text-[#2a2a2a] mt-1">•</span>
-            <span>
-              Validating hypotheses through benchmarking, usability testing, and
-              A/B tests before full implementation reduces risk and builds
-              confidence in design decisions
-            </span>
+            <span>Benchmark, test, then ship — validating each hypothesis before full rollout kept risk low</span>
           </li>
         </ul>
       </section>
+      </Reveal>
     </div>
     </>
   );
