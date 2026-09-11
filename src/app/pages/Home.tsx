@@ -30,10 +30,14 @@ export function Home() {
               View selected work
               <ArrowRight size={16} />
             </Link>
-            <button className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#2a2a2a] text-[#2a2a2a] rounded-sm hover:bg-[#f0f0ec] transition-colors text-sm sm:text-base">
+            <a
+              href="/Lucas_Morais_Resume.pdf"
+              download="Lucas_Morais_Resume.pdf"
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#2a2a2a] text-[#2a2a2a] rounded-sm hover:bg-[#f0f0ec] transition-colors text-sm sm:text-base"
+            >
               <Download size={16} />
               Download resume
-            </button>
+            </a>
           </div>
         </div>
       </section>
