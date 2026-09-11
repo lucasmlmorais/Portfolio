@@ -31,7 +31,7 @@ export function Home() {
               <ArrowRight size={16} />
             </Link>
             <a
-              href="/Lucas_Morais_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Lucas_Morais_Resume.pdf`}
               download="Lucas_Morais_Resume.pdf"
               className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#2a2a2a] text-[#2a2a2a] rounded-sm hover:bg-[#f0f0ec] transition-colors text-sm sm:text-base"
             >

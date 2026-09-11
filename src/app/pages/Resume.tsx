@@ -6,7 +6,7 @@ export function Resume() {
       <div className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-0 mb-12 sm:mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl tracking-tight">Resume</h1>
         <a
-          href="/Lucas_Morais_Resume.pdf"
+          href={`${import.meta.env.BASE_URL}Lucas_Morais_Resume.pdf`}
           download="Lucas_Morais_Resume.pdf"
           className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#2a2a2a] text-[#fafaf8] rounded-sm hover:bg-[#444] transition-colors text-sm sm:text-base whitespace-nowrap"
         >
