@@ -2,7 +2,7 @@ import type { Dictionary } from "../types";
 
 export const es: Dictionary = {
   meta: {
-    title: "Lucas Morais — Diseñador de Producto Senior",
+    title: "Lucas Morais, Diseñador de Producto Senior",
     description:
       "Portafolio de Lucas Morais, Diseñador de Producto Senior enfocado en sistemas de diseño y crecimiento para plataformas multimarca de restaurantes y e-commerce B2B.",
   },
@@ -26,7 +26,7 @@ export const es: Dictionary = {
     openToWork: "Abierto a nuevas oportunidades",
     heroTitle: "Diseño sistemas para plataformas que ya no caben en lo que las sostiene.",
     heroSubtitle:
-      "Ocho años liderando diseño de producto para tecnología de restaurantes y plataformas B2B — reduje cientos de componentes a decenas, y convertí una sola pantalla mal diseñada en 33% más de conversión.",
+      "Ocho años liderando diseño de producto para tecnología de restaurantes y plataformas B2B, reduje cientos de componentes a decenas y convertí una sola pantalla mal diseñada en 33% más de conversión.",
     howIWorkTitle: "Cómo trabajo",
     pillars: [
       {
@@ -35,11 +35,11 @@ export const es: Dictionary = {
       },
       {
         title: "Datos antes que opiniones",
-        body: "El mejor rediseño que entregué este año no empezó con una corazonada — empezó con un número de abandono en el embudo. Busco ese número antes de abrir Figma.",
+        body: "El mejor rediseño que entregué este año no empezó con una corazonada. Empezó con un número de abandono en el embudo. Busco ese número antes de abrir Figma.",
       },
       {
         title: "Pensado también para quien no diseña",
-        body: "La mitad de las personas que usan lo que diseño no son diseñadoras — gerentes de marca, marketing, operaciones. Si necesitan que yo les cambie un banner, la herramienta falló.",
+        body: "La mitad de las personas que usan lo que diseño no son diseñadoras: gerentes de marca, marketing, operaciones. Si necesitan que yo les cambie un banner, la herramienta falló.",
       },
     ],
     featuredWorkTitle: "Proyectos destacados",
@@ -48,7 +48,7 @@ export const es: Dictionary = {
       cms: {
         title: "Migración de CMS para una plataforma multimarca de restaurantes",
         blurb:
-          "Migré un CMS heredado para 8 marcas de restaurantes — reduje los componentes únicos en 60% y dejé que marketing actualizara contenido sin pasar por diseño.",
+          "Migré un CMS heredado para 8 marcas de restaurantes. Reduje los componentes únicos en 60% y dejé que marketing actualizara contenido sin pasar por diseño.",
       },
       ordering: {
         title: "Optimización del flujo de pedidos para una plataforma de restaurantes",
@@ -59,19 +59,19 @@ export const es: Dictionary = {
     aboutTitle: "Sobre mí",
     bioParagraphs: [
       "Pasé la mayor parte de los últimos cinco años dentro de un mismo producto: una plataforma de restaurantes que creció de una marca a ocho mientras yo reconstruía los sistemas por debajo. Antes de eso, consultoría en transformación digital y diseño conversacional para chatbots.",
-      "Me gustan las partes del diseño que son un poco menos glamorosas — el CMS que nadie quiere tocar, el caso límite en el sistema, la pantalla que todos daban por buena hasta que los datos dijeron lo contrario.",
+      "Me gustan las partes del diseño que son un poco menos glamorosas: el CMS que nadie quiere tocar, el caso límite en el sistema, la pantalla que todos daban por buena hasta que los datos dijeron lo contrario.",
     ],
     moreAboutMe: "Más sobre mi trayectoria",
   },
   work: {
     title: "Proyectos destacados",
     subtitle:
-      "Dos casos de estudio, un mismo tema de fondo: una plataforma que superó aquello sobre lo que fue construida — primero el CMS, después el flujo de pedidos.",
+      "Dos casos de estudio, un mismo tema de fondo: una plataforma que superó aquello sobre lo que fue construida, primero el CMS, después el flujo de pedidos.",
     projects: {
       cms: {
         title: "Migración de CMS para una plataforma multimarca de restaurantes",
         description:
-          "Migré un CMS heredado para 8 marcas de restaurantes — reduje los componentes únicos de cientos a decenas y le di a los equipos sin perfil de diseño control sobre las actualizaciones de rutina.",
+          "Migré un CMS heredado para 8 marcas de restaurantes. Reduje los componentes únicos de cientos a decenas y le di a los equipos sin perfil de diseño control sobre las actualizaciones de rutina.",
         tags: ["Sistemas de diseño", "B2B", "QSR"],
       },
       ordering: {
@@ -85,7 +85,7 @@ export const es: Dictionary = {
   about: {
     title: "Sobre mí",
     bioParagraphs: [
-      "Llegué al diseño por un camino un poco torcido: una licenciatura en diseño gráfico, otra en gestión de sistemas de información, y en el medio un posgrado en diseño de interacción. Esa mezcla probablemente explica por qué me atraen las partes del trabajo de producto que son más plomería que pulido — sistemas de componentes, casos límite, el CMS que nadie quiere tocar.",
+      "Llegué al diseño por un camino un poco torcido: una licenciatura en diseño gráfico, otra en gestión de sistemas de información, y en el medio un posgrado en diseño de interacción. Esa mezcla probablemente explica por qué me atraen las partes del trabajo de producto que son más plomería que pulido: sistemas de componentes, casos límite, el CMS que nadie quiere tocar.",
       "La mayor parte de los últimos cinco años estuve dentro de una misma plataforma de restaurantes, viéndola crecer de una marca a ocho mientras reconstruía los sistemas por debajo. Antes de eso, pasé dos años diseñando flujos conversacionales para la consultora de chatbots más grande de Brasil, con clientes que iban desde hardware de computadoras hasta pulpa y papel.",
     ],
     education: {
@@ -124,7 +124,7 @@ export const es: Dictionary = {
     },
     awards: {
       heading: "Premios",
-      title: "1er lugar — Students to Business (S2B)",
+      title: "1er lugar en Students to Business (S2B)",
       body: "Microsoft Innovation Center",
     },
     domains: {
@@ -152,7 +152,7 @@ export const es: Dictionary = {
         },
         {
           title: "Flujos de trabajo asistidos por IA",
-          body: "Uso herramientas de IA para avanzar más rápido en trabajo de producción — incluyendo el código de este mismo portafolio, hecho con Claude Code",
+          body: "Uso herramientas de IA para avanzar más rápido en trabajo de producción, incluyendo el código de este mismo portafolio, hecho con Claude Code",
         },
       ],
     },
@@ -161,7 +161,7 @@ export const es: Dictionary = {
     downloadPdf: "Descargar PDF",
     summaryHeading: "Resumen profesional",
     summary:
-      "Diseñador de producto con 8 años de experiencia en tecnología para restaurantes, e-commerce B2B e interfaces conversacionales. Actualmente enfocado en sistemas de diseño y crecimiento para una plataforma multimarca de restaurantes — el tipo de trabajo que es más plomería que pulido, y que casi siempre rinde frutos más adelante.",
+      "Diseñador de producto con 8 años de experiencia en tecnología para restaurantes, e-commerce B2B e interfaces conversacionales. Actualmente enfocado en sistemas de diseño y crecimiento para una plataforma multimarca de restaurantes, el tipo de trabajo que es más plomería que pulido y que casi siempre rinde frutos más adelante.",
     experienceHeading: "Experiencia profesional",
     jobs: [
       {
@@ -252,14 +252,14 @@ export const es: Dictionary = {
       },
       {
         label: "Premios",
-        body: "1er lugar — Students to Business (S2B), Microsoft Innovation Center",
+        body: "1er lugar en Students to Business (S2B), Microsoft Innovation Center",
       },
     ],
   },
   contact: {
     title: "Hablemos",
     subtitle:
-      "Abierto a nuevos roles y colaboraciones interesantes — sobre todo en crecimiento, sistemas de diseño, o simplificar operaciones complicadas. El correo es lo más rápido.",
+      "Abierto a nuevos roles y colaboraciones interesantes, sobre todo en crecimiento, sistemas de diseño, o simplificar operaciones complicadas. El correo es lo más rápido.",
     emailHeading: "Correo",
     emailCaption: "Ideal para detalles de proyectos",
     linkedinHeading: "LinkedIn",
@@ -269,12 +269,12 @@ export const es: Dictionary = {
     locationCaption: "BRT (UTC-3) · abierto a trabajo remoto y viajes ocasionales",
     lookingForHeading: "Qué estoy buscando",
     lookingForBody:
-      "Trabajo de crecimiento y conversión en entornos de producto complejos. Sistemas de diseño para plataformas con más de una marca. Transformación digital donde el diseño resuelve un problema operativo, no lo decora. Si eso es lo que estás construyendo, hablemos — normalmente respondo en uno o dos días.",
+      "Trabajo de crecimiento y conversión en entornos de producto complejos. Sistemas de diseño para plataformas con más de una marca. Transformación digital donde el diseño resuelve un problema operativo, no lo decora. Si eso es lo que estás construyendo, hablemos. Normalmente respondo en uno o dos días.",
   },
   notFound: {
     title: "404",
     subtitle: "Página no encontrada",
-    body: "Esa página no existe — o se movió y nadie actualizó el enlace.",
+    body: "Esa página no existe, o se movió y nadie actualizó el enlace.",
     backHome: "Volver al inicio",
   },
   commandPalette: {
@@ -308,13 +308,13 @@ export const es: Dictionary = {
       role: "Lead Product Designer",
       domainLabel: "Dominio",
       domain: "QSR, B2B, sistemas de diseño",
-      body: "Una plataforma multimarca de restaurantes operaba sobre un CMS heredado que estaba llegando al final de su vida útil — difícil de mantener, limitado, y un freno para el crecimiento. La migración se convirtió en la oportunidad de rediseñar la arquitectura de componentes en sí, para que marcas con identidades distintas pudieran compartir un mismo sistema en lugar de duplicar cada una el suyo.",
+      body: "Una plataforma multimarca de restaurantes operaba sobre un CMS heredado que estaba llegando al final de su vida útil, difícil de mantener, limitado, y un freno para el crecimiento. La migración se convirtió en la oportunidad de rediseñar la arquitectura de componentes en sí, para que marcas con identidades distintas pudieran compartir un mismo sistema en lugar de duplicar cada una el suyo.",
     },
     problem: {
       heading: "El problema",
       paragraphs: [
         "El CMS heredado era difícil de mantener y estaba llegando a su deprecación. Los gerentes de marca, marketing y el equipo de operaciones no tenían forma de actualizar contenido sin recurrir a un diseñador.",
-        "Cada marca además operaba con sus propios componentes a medida — trabajo duplicado, lanzamientos de marca más lentos, y un sistema que no lograba seguirle el ritmo al crecimiento de la empresa.",
+        "Cada marca además operaba con sus propios componentes a medida: trabajo duplicado, lanzamientos de marca más lentos, y un sistema que no lograba seguirle el ritmo al crecimiento de la empresa.",
       ],
     },
     role: {
@@ -330,7 +330,7 @@ export const es: Dictionary = {
     constraints: {
       heading: "Restricciones",
       items: [
-        "Cero tiempo de inactividad — los sitios atienden a millones de clientes",
+        "Cero tiempo de inactividad: los sitios atienden a millones de clientes",
         "Dar soporte a más de 8 marcas con identidades visuales distintas",
         "Los equipos sin perfil técnico necesitan poder actualizar contenido de forma independiente",
         "El tiempo limitado de ingeniería obligaba a una implementación por fases",
@@ -343,7 +343,7 @@ export const es: Dictionary = {
       boxes: [
         {
           title: "Sistema de variantes de componentes",
-          body: "Una arquitectura flexible con variantes tematizables reemplazó cientos de componentes hechos a medida por unas pocas decenas — y volvió al sistema más flexible, no menos.",
+          body: "Una arquitectura flexible con variantes tematizables reemplazó cientos de componentes hechos a medida por unas pocas decenas. Y volvió al sistema más flexible, no menos.",
         },
         {
           title: "Herramientas de autoservicio",
@@ -360,7 +360,7 @@ export const es: Dictionary = {
         },
         {
           title: "Mejora progresiva",
-          body: "Los componentes funcionaban bien desde el primer momento con una configuración mínima, con opciones avanzadas por debajo para usuarios expertos — menos fricción de onboarding, más margen para casos límite.",
+          body: "Los componentes funcionaban bien desde el primer momento con una configuración mínima, con opciones avanzadas por debajo para usuarios expertos: menos fricción de onboarding, más margen para casos límite.",
         },
         {
           title: "Pensado para la migración",
@@ -383,16 +383,16 @@ export const es: Dictionary = {
       heading: "Aprendizajes",
       items: [
         "Una migración técnica es una oportunidad para un rediseño estratégico, no solo un traslado de lo mismo a otro lado",
-        "Las herramientas para quienes no diseñan tienen que ser potentes y tolerantes al error — algo distinto a diseñar para el cliente final",
+        "Las herramientas para quienes no diseñan tienen que ser potentes y tolerantes al error, algo distinto a diseñar para el cliente final",
         "Involucrar a marca e ingeniería desde el primer día, o pagarlo después en retrabajo",
-        "Una restricción difícil — dar soporte a más de 8 marcas — obligó a un sistema mejor y más escalable de lo que un brief más cómodo habría logrado",
+        "Una restricción difícil (dar soporte a más de 8 marcas) obligó a un sistema mejor y más escalable de lo que un brief más cómodo habría logrado",
       ],
     },
   },
   caseStudyOrdering: {
     title: "Optimización del flujo de pedidos para una plataforma de restaurantes",
     subtitle:
-      "La conversión estaba estancada en 6%. La rastreé hasta una sola pantalla — obligar a elegir ubicación antes del menú — y corregirla llevó la conversión a 8%.",
+      "La conversión estaba estancada en 6%. La rastreé hasta una sola pantalla (obligar a elegir ubicación antes del menú) y corregirla llevó la conversión a 8%.",
     overview: {
       heading: "Panorama general",
       yearLabel: "Año",
@@ -406,7 +406,7 @@ export const es: Dictionary = {
     problem: {
       heading: "El problema",
       paragraphs: [
-        "Los usuarios con sesión iniciada convertían significativamente mejor que los visitantes anónimos — pero representaban una porción pequeña del tráfico total.",
+        "Los usuarios con sesión iniciada convertían significativamente mejor que los visitantes anónimos, pero representaban una porción pequeña del tráfico total.",
         "El problema más grande estaba en el propio flujo de pedidos: había que elegir una ubicación de restaurante antes incluso de poder ver el menú. Ese único punto de decisión, ajeno a lo que la persona realmente quería pedir, estaba costando conversiones en silencio. La conversión general se mantenía en 6%, muy por debajo del promedio de la industria.",
         "El programa de lealtad tenía valor real y poca adopción, porque no se mostraba en ningún momento que importara. El registro y el login ya habían recibido críticas en revisiones heurísticas, y las funciones de usuario logueado estaban enterradas donde los usuarios nuevos jamás las encontrarían.",
       ],
@@ -433,7 +433,7 @@ export const es: Dictionary = {
     approach: {
       heading: "Enfoque estratégico",
       intro:
-        "Los datos mostraban que los usuarios con sesión iniciada convertían mejor, así que toda la iniciativa se centró en lograr que más usuarios iniciaran sesión — y darles un motivo para hacerlo. Dividimos el trabajo en frentes más pequeños, ordenados por dependencias técnicas e impacto esperado.",
+        "Los datos mostraban que los usuarios con sesión iniciada convertían mejor, así que toda la iniciativa se centró en lograr que más usuarios iniciaran sesión y darles un motivo para hacerlo. Dividimos el trabajo en frentes más pequeños, ordenados por dependencias técnicas e impacto esperado.",
       boxes: [
         {
           title: "Registro y login rediseñados",
@@ -441,7 +441,7 @@ export const es: Dictionary = {
         },
         {
           title: "Funciones de usuario logueado integradas al flujo principal",
-          body: "Volver a pedir, favoritos y beneficios de lealtad salieron de páginas escondidas para entrar al flujo principal de pedidos — visibles también para usuarios anónimos, junto a una invitación clara a crear una cuenta.",
+          body: "Volver a pedir, favoritos y beneficios de lealtad salieron de páginas escondidas para entrar al flujo principal de pedidos, visibles también para usuarios anónimos, junto a una invitación clara a crear una cuenta.",
         },
       ],
     },
@@ -469,7 +469,7 @@ export const es: Dictionary = {
     outcomes: {
       heading: "Resultados",
       stats: [
-        { stat: "6% → 8%", label: "Conversión general — un aumento relativo del 33%" },
+        { stat: "6% → 8%", label: "Conversión general (un aumento relativo del 33%)" },
         { stat: "10–20%", label: "Más logins y registros gracias a puntos de contacto estratégicos" },
         { stat: "30–60%", label: "Más uso de volver a pedir, favoritos y beneficios de lealtad" },
         { stat: "100%", label: "Cumplimiento de ADA, con mejor soporte para lectores de pantalla" },
@@ -480,11 +480,11 @@ export const es: Dictionary = {
     learnings: {
       heading: "Aprendizajes",
       items: [
-        "Una métrica puede esconder una estrategia a plena vista — la mayor conversión de usuarios logueados terminó siendo todo el plan",
+        "Una métrica puede esconder una estrategia a plena vista: la mayor conversión de usuarios logueados terminó siendo todo el plan",
         "Mostrar el valor antes de pedir el compromiso elevó los registros entre 10 y 20%",
-        "La ubicación de una función importa tanto como su diseño — las mismas funciones tuvieron entre 30 y 60% más uso apenas salieron de páginas escondidas",
+        "La ubicación de una función importa tanto como su diseño: las mismas funciones tuvieron entre 30 y 60% más uso apenas salieron de páginas escondidas",
         "Dividir una iniciativa grande en frentes ordenados por dependencia e impacto permite entregar valor de forma continua, en vez de esperar un gran lanzamiento único",
-        "Comparar, probar y recién entonces lanzar — validar cada hipótesis antes del rollout completo mantuvo el riesgo bajo",
+        "Comparar, probar y recién entonces lanzar: validar cada hipótesis antes del rollout completo mantuvo el riesgo bajo",
       ],
     },
   },

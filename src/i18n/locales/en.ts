@@ -2,7 +2,7 @@ import type { Dictionary } from "../types";
 
 export const en: Dictionary = {
   meta: {
-    title: "Lucas Morais — Senior Product Designer",
+    title: "Lucas Morais, Senior Product Designer",
     description:
       "Portfolio of Lucas Morais, a Senior Product Designer working on design systems and growth for multi-brand restaurant and B2B e-commerce platforms.",
   },
@@ -26,7 +26,7 @@ export const en: Dictionary = {
     openToWork: "Open to new opportunities",
     heroTitle: "I design systems for platforms that have outgrown themselves.",
     heroSubtitle:
-      "Eight years leading product design for restaurant tech and B2B platforms — cutting hundreds of components down to dozens, and turning one bad screen into 33% more conversion.",
+      "Eight years leading product design for restaurant tech and B2B platforms, cutting hundreds of components down to dozens and turning one bad screen into 33% more conversion.",
     howIWorkTitle: "How I work",
     pillars: [
       {
@@ -35,11 +35,11 @@ export const en: Dictionary = {
       },
       {
         title: "Data before opinions",
-        body: "The best redesign I shipped this year didn't start with a hunch — it started with a drop-off number in the funnel. I look for that number before I open Figma.",
+        body: "The best redesign I shipped this year didn't start with a hunch. It started with a drop-off number in the funnel. I look for that number before I open Figma.",
       },
       {
         title: "Built for non-designers too",
-        body: "Half the people using what I ship aren't designers — brand managers, marketers, ops staff. If they need me to update a banner, the tool failed.",
+        body: "Half the people using what I ship aren't designers: brand managers, marketers, ops staff. If they need me to update a banner, the tool failed.",
       },
     ],
     featuredWorkTitle: "Featured work",
@@ -48,7 +48,7 @@ export const en: Dictionary = {
       cms: {
         title: "CMS Migration for a Multi-Brand Restaurant Platform",
         blurb:
-          "Migrated a legacy CMS for 8 restaurant brands — cut unique components by 60% and let marketing teams update content without design in the loop.",
+          "Migrated a legacy CMS for 8 restaurant brands. Cut unique components by 60% and let marketing teams update content without design in the loop.",
       },
       ordering: {
         title: "Ordering Experience Optimization for a Restaurant Platform",
@@ -59,19 +59,19 @@ export const en: Dictionary = {
     aboutTitle: "About",
     bioParagraphs: [
       "I've spent most of the last five years inside one product: a restaurant platform that grew from one brand to eight while I rebuilt the systems underneath it. Before that, digital transformation consulting and conversational design for chatbots.",
-      "I like the parts of design work that are a little unglamorous — the CMS nobody wants to touch, the edge case in the system, the screen everyone assumed was fine until the data said otherwise.",
+      "I like the parts of design work that are a little unglamorous: the CMS nobody wants to touch, the edge case in the system, the screen everyone assumed was fine until the data said otherwise.",
     ],
     moreAboutMe: "More about my background",
   },
   work: {
     title: "Selected work",
     subtitle:
-      "Two case studies, one recurring theme: a platform outgrowing what it was built on — first the CMS, then the ordering flow.",
+      "Two case studies, one recurring theme: a platform outgrowing what it was built on, first the CMS, then the ordering flow.",
     projects: {
       cms: {
         title: "CMS Migration for a Multi-Brand Restaurant Platform",
         description:
-          "Migrated a legacy CMS for 8 restaurant brands — cut unique components from hundreds to dozens and gave non-design teams control over routine updates.",
+          "Migrated a legacy CMS for 8 restaurant brands. Cut unique components from hundreds to dozens and gave non-design teams control over routine updates.",
         tags: ["Systems Design", "B2B", "QSR"],
       },
       ordering: {
@@ -85,7 +85,7 @@ export const en: Dictionary = {
   about: {
     title: "About",
     bioParagraphs: [
-      "I came into design sideways: a bachelor's in graphic design, another in information systems management, and a postgrad in interaction design squeezed in between. That mix is probably why I gravitate toward the parts of product work that are more plumbing than polish — component systems, edge cases, the CMS nobody wants to touch.",
+      "I came into design sideways: a bachelor's in graphic design, another in information systems management, and a postgrad in interaction design squeezed in between. That mix is probably why I gravitate toward the parts of product work that are more plumbing than polish: component systems, edge cases, the CMS nobody wants to touch.",
       "Most of the last five years have been inside one restaurant platform, watching it grow from one brand to eight while I rebuilt the systems underneath it. Before that, I spent two years designing conversational flows for Brazil's largest chatbot consultancy, for clients ranging from computer hardware to pulp and paper.",
     ],
     education: {
@@ -124,7 +124,7 @@ export const en: Dictionary = {
     },
     awards: {
       heading: "Awards",
-      title: "1st Place — Students to Business (S2B)",
+      title: "1st Place at Students to Business (S2B)",
       body: "Microsoft Innovation Center",
     },
     domains: {
@@ -152,7 +152,7 @@ export const en: Dictionary = {
         },
         {
           title: "AI-Assisted Workflows",
-          body: "Using AI tools to move faster on production work — including shipping this portfolio's code with Claude Code",
+          body: "Using AI tools to move faster on production work, including shipping this portfolio's code with Claude Code",
         },
       ],
     },
@@ -161,7 +161,7 @@ export const en: Dictionary = {
     downloadPdf: "Download PDF",
     summaryHeading: "Professional Summary",
     summary:
-      "Product designer with 8 years across restaurant tech, B2B e-commerce, and conversational interfaces. Currently focused on design systems and growth for a multi-brand restaurant platform — the kind of work that's more plumbing than polish, and usually pays off later.",
+      "Product designer with 8 years across restaurant tech, B2B e-commerce, and conversational interfaces. Currently focused on design systems and growth for a multi-brand restaurant platform, the kind of work that's more plumbing than polish and usually pays off later.",
     experienceHeading: "Professional Experience",
     jobs: [
       {
@@ -252,14 +252,14 @@ export const en: Dictionary = {
       },
       {
         label: "Awards",
-        body: "1st Place — Students to Business (S2B), Microsoft Innovation Center",
+        body: "1st Place at Students to Business (S2B), Microsoft Innovation Center",
       },
     ],
   },
   contact: {
     title: "Get in touch",
     subtitle:
-      "Open to new roles and interesting collaborations — especially around growth, systems design, or making messy operations simpler. Email's fastest.",
+      "Open to new roles and interesting collaborations, especially around growth, systems design, or making messy operations simpler. Email's fastest.",
     emailHeading: "Email",
     emailCaption: "Best for project details",
     linkedinHeading: "LinkedIn",
@@ -269,12 +269,12 @@ export const en: Dictionary = {
     locationCaption: "BRT (UTC-3) · open to remote work and occasional travel",
     lookingForHeading: "What I'm looking for",
     lookingForBody:
-      "Growth and conversion work in complicated product environments. Design systems for platforms with more than one brand. Digital transformation where design is solving an operational problem, not decorating one. If that's what you're building, let's talk — I usually reply within a day or two.",
+      "Growth and conversion work in complicated product environments. Design systems for platforms with more than one brand. Digital transformation where design is solving an operational problem, not decorating one. If that's what you're building, let's talk. I usually reply within a day or two.",
   },
   notFound: {
     title: "404",
     subtitle: "Page not found",
-    body: "That page doesn't exist — or it moved and nobody updated the link.",
+    body: "That page doesn't exist, or it moved and nobody updated the link.",
     backHome: "Back to home",
   },
   commandPalette: {
@@ -308,13 +308,13 @@ export const en: Dictionary = {
       role: "Lead Product Designer",
       domainLabel: "Domain",
       domain: "QSR, B2B, Systems Design",
-      body: "A multi-brand restaurant platform ran on a legacy CMS approaching end-of-life — hard to maintain, limited, and blocking growth. The migration became a chance to redesign the component architecture itself, so brands with distinct identities could share one system instead of each duplicating their own.",
+      body: "A multi-brand restaurant platform ran on a legacy CMS approaching end-of-life, hard to maintain, limited, and blocking growth. The migration became a chance to redesign the component architecture itself, so brands with distinct identities could share one system instead of each duplicating their own.",
     },
     problem: {
       heading: "Problem",
       paragraphs: [
         "The legacy CMS was hard to maintain and approaching deprecation. Brand managers, marketers, and ops staff had no way to update content without pulling in a designer.",
-        "Each brand also ran its own custom components — duplicated work, slower brand launches, and a system that couldn't keep up with the company's growth.",
+        "Each brand also ran its own custom components: duplicated work, slower brand launches, and a system that couldn't keep up with the company's growth.",
       ],
     },
     role: {
@@ -330,7 +330,7 @@ export const en: Dictionary = {
     constraints: {
       heading: "Constraints",
       items: [
-        "Zero downtime — the sites serve millions of customers",
+        "Zero downtime: the sites serve millions of customers",
         "Support 8+ brands with distinct visual identities",
         "Non-technical teams need to update content independently",
         "Limited engineering time meant a phased rollout",
@@ -343,7 +343,7 @@ export const en: Dictionary = {
       boxes: [
         {
           title: "Component variant system",
-          body: "A flexible architecture with themeable variants replaced hundreds of one-off components with a few dozen — and made the system more flexible, not less.",
+          body: "A flexible architecture with themeable variants replaced hundreds of one-off components with a few dozen. And made the system more flexible, not less.",
         },
         {
           title: "Self-service tooling",
@@ -360,7 +360,7 @@ export const en: Dictionary = {
         },
         {
           title: "Progressive enhancement",
-          body: "Components worked out of the box with minimal setup, with advanced options underneath for power users — less onboarding friction, more room for edge cases.",
+          body: "Components worked out of the box with minimal setup, with advanced options underneath for power users: less onboarding friction, more room for edge cases.",
         },
         {
           title: "Migration-friendly",
@@ -383,16 +383,16 @@ export const en: Dictionary = {
       heading: "Learnings",
       items: [
         "A technical migration is a chance for a strategic redesign, not just a lift-and-shift",
-        "Tooling for non-designers has to be powerful and forgiving — different from designing for end customers",
+        "Tooling for non-designers has to be powerful and forgiving, different from designing for end customers",
         "Loop in brand and engineering from day one, or pay for it in rework later",
-        "A hard constraint — support 8+ brands — forced a better, more scalable system than an easier brief would have",
+        "A hard constraint (support 8+ brands) forced a better, more scalable system than an easier brief would have",
       ],
     },
   },
   caseStudyOrdering: {
     title: "Ordering Experience Optimization for a Restaurant Platform",
     subtitle:
-      "Conversion was stuck at 6%. I traced it to one screen — forcing location selection before the menu — and fixing it got conversion to 8%.",
+      "Conversion was stuck at 6%. I traced it to one screen (forcing location selection before the menu) and fixing it got conversion to 8%.",
     overview: {
       heading: "Overview",
       yearLabel: "Year",
@@ -406,7 +406,7 @@ export const en: Dictionary = {
     problem: {
       heading: "Problem",
       paragraphs: [
-        "Logged-in users converted significantly better than anonymous visitors — but they were a small share of total traffic.",
+        "Logged-in users converted significantly better than anonymous visitors, but they were a small share of total traffic.",
         "The bigger issue was the ordering flow itself: users had to pick a restaurant location before they could even see the menu. That one decision point, unrelated to what they actually wanted to order, was quietly costing conversions. Overall conversion sat at 6%, well below industry benchmarks.",
         "The loyalty program had real value and low adoption, because it wasn't surfaced anywhere that mattered. Registration and login had already drawn criticism in heuristic reviews, and logged-in features were buried where new users would never find them.",
       ],
@@ -433,7 +433,7 @@ export const en: Dictionary = {
     approach: {
       heading: "Strategic approach",
       intro:
-        "Data showed logged-in users converted better, so the whole initiative centered on getting more users logged in — and giving them a reason to. We split the work into smaller streams, ordered by technical dependencies and expected impact.",
+        "Data showed logged-in users converted better, so the whole initiative centered on getting more users logged in and giving them a reason to. We split the work into smaller streams, ordered by technical dependencies and expected impact.",
       boxes: [
         {
           title: "Redesigned registration and login",
@@ -441,7 +441,7 @@ export const en: Dictionary = {
         },
         {
           title: "Moved logged-in features into the main flow",
-          body: "Reordering, favorites, and loyalty benefits moved out of buried pages into the primary ordering flow — visible to anonymous users too, next to a clear prompt to create an account.",
+          body: "Reordering, favorites, and loyalty benefits moved out of buried pages into the primary ordering flow, visible to anonymous users too, next to a clear prompt to create an account.",
         },
         {
           title: "Bypassed the location friction point",
@@ -477,7 +477,7 @@ export const en: Dictionary = {
     outcomes: {
       heading: "Outcomes",
       stats: [
-        { stat: "6% → 8%", label: "Overall conversion — a 33% relative increase" },
+        { stat: "6% → 8%", label: "Overall conversion (a 33% relative increase)" },
         { stat: "10–20%", label: "More logins and registrations from strategic touchpoints" },
         { stat: "30–60%", label: "More usage of reorder, favorites, and loyalty features" },
         { stat: "100%", label: "ADA compliant, with improved screen reader support" },
@@ -488,11 +488,11 @@ export const en: Dictionary = {
     learnings: {
       heading: "Learnings",
       items: [
-        "A metric can hide a strategy in plain sight — logged-in users' higher conversion became the whole plan",
+        "A metric can hide a strategy in plain sight: logged-in users' higher conversion became the whole plan",
         "Showing value before asking for commitment lifted registrations by 10–20%",
-        "Placement matters as much as design — the same features saw 30–60% more use once they left buried pages",
+        "Placement matters as much as design: the same features saw 30–60% more use once they left buried pages",
         "Splitting a big initiative into workstreams ordered by dependency and impact means shipping value continuously, not waiting for a big bang",
-        "Benchmark, test, then ship — validating each hypothesis before full rollout kept risk low",
+        "Benchmark, test, then ship: validating each hypothesis before full rollout kept risk low",
       ],
     },
   },
