@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import { Layout } from "./components/Layout";
+import { RootRedirect } from "./components/RootRedirect";
 import { Home } from "./pages/Home";
 import { Work } from "./pages/Work";
 import { CaseStudyCMS } from "./pages/CaseStudyCMS";
@@ -9,21 +10,25 @@ import { Resume } from "./pages/Resume";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    { index: true, Component: RootRedirect },
+    {
+      path: ":lang",
+      Component: Layout,
+      children: [
+        { index: true, Component: Home },
+        { path: "work", Component: Work },
+        { path: "case-study/cms-migration", Component: CaseStudyCMS },
+        { path: "case-study/ordering-optimization", Component: CaseStudyOrdering },
+        { path: "about", Component: About },
+        { path: "resume", Component: Resume },
+        { path: "contact", Component: Contact },
+        { path: "*", Component: NotFound },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: Layout,
-    children: [
-      { index: true, Component: Home },
-      { path: "work", Component: Work },
-      { path: "case-study/cms-migration", Component: CaseStudyCMS },
-      { path: "case-study/ordering-optimization", Component: CaseStudyOrdering },
-      { path: "about", Component: About },
-      { path: "resume", Component: Resume },
-      { path: "contact", Component: Contact },
-      { path: "*", Component: NotFound },
-    ],
+    basename: "/Portfolio",
   },
-],  {
-  basename: "/Portfolio"
-});
+);

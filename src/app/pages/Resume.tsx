@@ -1,300 +1,85 @@
 import { Download } from "lucide-react";
+import { useTranslations } from "../../i18n/context";
 
 export function Resume() {
+  const t = useTranslations();
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
       <div className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-0 mb-12 sm:mb-16">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl tracking-tight">Resume</h1>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl tracking-tight">{t.nav.resume}</h1>
         <a
           href={`${import.meta.env.BASE_URL}Lucas_Morais_Resume.pdf`}
           download="Lucas_Morais_Resume.pdf"
           className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#2a2a2a] text-[#fafaf8] rounded-sm hover:bg-[#444] transition-colors text-sm sm:text-base whitespace-nowrap"
         >
           <Download size={16} />
-          Download PDF
+          {t.resume.downloadPdf}
         </a>
       </div>
 
       {/* Professional Summary */}
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
-        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Professional Summary</h2>
-        <p className="text-[#666] leading-relaxed">
-          Product designer with 8 years across restaurant tech, B2B
-          e-commerce, and conversational interfaces. Currently focused on
-          design systems and growth for a multi-brand restaurant platform —
-          the kind of work that's more plumbing than polish, and usually pays
-          off later.
-        </p>
+        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">{t.resume.summaryHeading}</h2>
+        <p className="text-[#666] leading-relaxed">{t.resume.summary}</p>
       </section>
 
       {/* Experience */}
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
-        <h2 className="text-xl sm:text-2xl mb-8 sm:mb-12 tracking-tight">
-          Professional Experience
-        </h2>
+        <h2 className="text-xl sm:text-2xl mb-8 sm:mb-12 tracking-tight">{t.resume.experienceHeading}</h2>
         <div className="space-y-12">
-          <div>
-            <div className="flex items-start justify-between mb-4">
-              <div>
-                <h3 className="text-xl mb-1 tracking-tight">Product Designer</h3>
-                <p className="text-[#666]">dti digital</p>
-                <p className="text-sm text-[#888] mt-1">
-                  Belo Horizonte, Brazil
-                </p>
+          {t.resume.jobs.map((job) => (
+            <div key={`${job.company}-${job.period}`}>
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl mb-1 tracking-tight">{job.title}</h3>
+                  <p className="text-[#666]">{job.company}</p>
+                  <p className="text-sm text-[#888] mt-1">{job.location}</p>
+                </div>
+                <span className="text-sm text-[#888] whitespace-nowrap">{job.period}</span>
               </div>
-              <span className="text-sm text-[#888] whitespace-nowrap">
-                April 2021 - Present
-              </span>
+              {job.intro && (
+                <p className="text-[#666] leading-relaxed mb-3">{job.intro}</p>
+              )}
+              <ul className="space-y-2 text-[#666] leading-relaxed">
+                {job.items.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="text-[#2a2a2a] mt-1">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="text-[#666] leading-relaxed mb-3">
-              Product Designer working end-to-end on the ideation and
-              development of digital products with agile squads.
-            </p>
-            <ul className="space-y-2 text-[#666] leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Since 2022, lead client relationships and design operations
-                  for the account, coordinating with UX Research, Visual
-                  Design, and UX Writing specialists
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  UX design reference across data analytics, internal
-                  management platforms, mobile community apps, restaurant/QSR
-                  platforms, e-commerce, and international products
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Facilitate discovery workshops and support continuous
-                  discovery on longer engagements
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Mentor new designers on the design process and workshop
-                  facilitation
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>Write monthly for the internal Design Guild on soft skills</span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="flex items-start justify-between mb-4">
-              <div>
-                <h3 className="text-xl mb-1 tracking-tight">UX Designer</h3>
-                <p className="text-[#666]">Avenue Code</p>
-                <p className="text-sm text-[#888] mt-1">
-                  Belo Horizonte, Brazil
-                </p>
-              </div>
-              <span className="text-sm text-[#888] whitespace-nowrap">
-                November 2019 - April 2021
-              </span>
-            </div>
-            <p className="text-[#666] leading-relaxed mb-3">
-              UX Designer responsible for understanding user and client needs,
-              designing conversational flows, and defining interactions between
-              people and chatbots.
-            </p>
-            <ul className="space-y-2 text-[#666] leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Designed conversational experiences across WhatsApp,
-                  Facebook Messenger, Google Business Messenger, and web
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Worked as a consultant for the leading chatbot company in
-                  Brazil, contributing to projects for companies across multiple
-                  industries, from computer hardware to pulp and paper
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Facilitated discovery inceptions, aligned product improvements,
-                  and briefly supported the design manager as a Buddy, helping
-                  track team needs and career development
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="flex items-start justify-between mb-4">
-              <div>
-                <h3 className="text-xl mb-1 tracking-tight">UX/UI Designer</h3>
-                <p className="text-[#666]">Paiva Piovesan Softwares</p>
-                <p className="text-sm text-[#888] mt-1">
-                  Belo Horizonte, Brazil
-                </p>
-              </div>
-              <span className="text-sm text-[#888] whitespace-nowrap">
-                January 2019 - November 2019
-              </span>
-            </div>
-            <ul className="space-y-2 text-[#666] leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Responsible for the design department, conducted usability
-                  tests, user interviews, and experience analysis while designing
-                  interfaces for the company's software products
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Strong advocate for introducing Scrum into the development
-                  process and acted as a Scrum Master adapted to the team's needs
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="flex items-start justify-between mb-4">
-              <div>
-                <h3 className="text-xl mb-1 tracking-tight">
-                  UX/UI Design Intern
-                </h3>
-                <p className="text-[#666]">Paiva Piovesan Softwares</p>
-                <p className="text-sm text-[#888] mt-1">
-                  Belo Horizonte, Brazil
-                </p>
-              </div>
-              <span className="text-sm text-[#888] whitespace-nowrap">
-                June 2018 - December 2018
-              </span>
-            </div>
-            <ul className="space-y-2 text-[#666] leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Worked on interface design for the Finance product across web
-                  and mobile versions for Android and iPhone
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#2a2a2a] mt-1">•</span>
-                <span>
-                  Created promotional materials for the company's website and
-                  social media, as well as internal communication assets
-                </span>
-              </li>
-            </ul>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* Education */}
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
-        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">Education</h2>
+        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">{t.resume.educationHeading}</h2>
         <div className="space-y-6">
-          <div className="flex items-start justify-between">
-            <div>
-              <h3 className="text-lg mb-1 tracking-tight">
-                Postgraduate Specialization in Interaction Design
-              </h3>
-              <p className="text-[#666]">
-                Pontifical Catholic University of Minas Gerais
-              </p>
+          {t.resume.education.map((item) => (
+            <div key={item.degree} className="flex items-start justify-between">
+              <div>
+                <h3 className="text-lg mb-1 tracking-tight">{item.degree}</h3>
+                <p className="text-[#666]">{item.school}</p>
+              </div>
+              <span className="text-sm text-[#888] whitespace-nowrap">{item.years}</span>
             </div>
-            <span className="text-sm text-[#888] whitespace-nowrap">
-              2019 - 2020
-            </span>
-          </div>
-          <div className="flex items-start justify-between">
-            <div>
-              <h3 className="text-lg mb-1 tracking-tight">
-                Bachelor's Degree in Graphic Design
-              </h3>
-              <p className="text-[#666]">
-                Universidade do Estado de Minas Gerais
-              </p>
-            </div>
-            <span className="text-sm text-[#888] whitespace-nowrap">
-              2014 - 2018
-            </span>
-          </div>
-          <div className="flex items-start justify-between">
-            <div>
-              <h3 className="text-lg mb-1 tracking-tight">
-                Bachelor's Degree in Information Systems Management
-              </h3>
-              <p className="text-[#666]">
-                Universidade Federal de Minas Gerais
-              </p>
-            </div>
-            <span className="text-sm text-[#888] whitespace-nowrap">
-              2011 - 2013
-            </span>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* Tools & Skills */}
       <section className="mb-12 sm:mb-16">
-        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">
-          Skills & Capabilities
-        </h2>
+        <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">{t.resume.skillsHeading}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Core Competencies</h3>
-            <p className="text-[#666] leading-relaxed">
-              Product Design, UX/UI Design, Interaction Design, Design Thinking,
-              Discovery Workshops, Conversational Design, AI-assisted Design
-              Workflows
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Tools</h3>
-            <p className="text-[#666] leading-relaxed">
-              Figma, Figma Make, FigJam, Adobe Suite
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Languages</h3>
-            <p className="text-[#666] leading-relaxed">
-              Portuguese (Native), English (Full Professional), German
-              (Professional Working), Spanish (Limited Working)
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Certifications</h3>
-            <p className="text-[#666] leading-relaxed">
-              Qualitative UX Research, UX Weekend, Design Sprint, Design
-              Thinking Facilitation, B1
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Product Domains</h3>
-            <p className="text-[#666] leading-relaxed">
-              Data Analytics, Internal Management Platforms, Mobile Apps, QSR &
-              Restaurant Platforms, E-commerce, International Products, Chatbots
-              & Conversational Interfaces
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm text-[#888] mb-3">Awards</h3>
-            <p className="text-[#666] leading-relaxed">
-              1st Place — Students to Business (S2B), Microsoft Innovation
-              Center
-            </p>
-          </div>
+          {t.resume.skills.map((skill) => (
+            <div key={skill.label}>
+              <h3 className="text-sm text-[#888] mb-3">{skill.label}</h3>
+              <p className="text-[#666] leading-relaxed">{skill.body}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>

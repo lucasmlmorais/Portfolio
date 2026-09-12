@@ -10,6 +10,7 @@ import {
   Linkedin,
   ArrowUpRight,
 } from "lucide-react";
+import { useLocale, useTranslations } from "../../i18n/context";
 import {
   CommandDialog,
   CommandEmpty,
@@ -23,6 +24,8 @@ import {
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  const locale = useLocale();
+  const t = useTranslations();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -35,8 +38,8 @@ export function CommandPalette() {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const go = (path: string) => {
-    navigate(path);
+  const go = (segment: string) => {
+    navigate(`/${locale}${segment ? `/${segment}` : ""}`);
     setOpen(false);
   };
 
@@ -44,47 +47,47 @@ export function CommandPalette() {
     <CommandDialog
       open={open}
       onOpenChange={setOpen}
-      title="Jump to"
-      description="Navigate the portfolio"
+      title={t.commandPalette.title}
+      description={t.commandPalette.description}
     >
-      <CommandInput placeholder="Where to?" />
+      <CommandInput placeholder={t.commandPalette.placeholder} />
       <CommandList>
-        <CommandEmpty>No match. Try "work" or "contact".</CommandEmpty>
-        <CommandGroup heading="Pages">
-          <CommandItem onSelect={() => go("/")}>
+        <CommandEmpty>{t.commandPalette.empty}</CommandEmpty>
+        <CommandGroup heading={t.commandPalette.groupPages}>
+          <CommandItem onSelect={() => go("")}>
             <Home />
-            Home
+            {t.commandPalette.home}
           </CommandItem>
-          <CommandItem onSelect={() => go("/work")}>
+          <CommandItem onSelect={() => go("work")}>
             <Briefcase />
-            Selected work
+            {t.commandPalette.work}
           </CommandItem>
-          <CommandItem onSelect={() => go("/about")}>
+          <CommandItem onSelect={() => go("about")}>
             <User />
-            About
+            {t.commandPalette.about}
           </CommandItem>
-          <CommandItem onSelect={() => go("/resume")}>
+          <CommandItem onSelect={() => go("resume")}>
             <FileText />
-            Resume
+            {t.commandPalette.resume}
           </CommandItem>
-          <CommandItem onSelect={() => go("/contact")}>
+          <CommandItem onSelect={() => go("contact")}>
             <Mail />
-            Contact
+            {t.commandPalette.contact}
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
-        <CommandGroup heading="Case studies">
-          <CommandItem onSelect={() => go("/case-study/cms-migration")}>
+        <CommandGroup heading={t.commandPalette.groupCaseStudies}>
+          <CommandItem onSelect={() => go("case-study/cms-migration")}>
             <ArrowUpRight />
-            Multi-brand CMS migration
+            {t.commandPalette.cms}
           </CommandItem>
-          <CommandItem onSelect={() => go("/case-study/ordering-optimization")}>
+          <CommandItem onSelect={() => go("case-study/ordering-optimization")}>
             <ArrowUpRight />
-            Ordering flow optimization
+            {t.commandPalette.ordering}
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
-        <CommandGroup heading="Actions">
+        <CommandGroup heading={t.commandPalette.groupActions}>
           <CommandItem
             onSelect={() => {
               window.location.href = "mailto:lucasmlmorais@gmail.com";
@@ -92,7 +95,7 @@ export function CommandPalette() {
             }}
           >
             <Mail />
-            Email Lucas
+            {t.commandPalette.emailAction}
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -101,7 +104,7 @@ export function CommandPalette() {
             }}
           >
             <Linkedin />
-            Open LinkedIn
+            {t.commandPalette.linkedinAction}
           </CommandItem>
           <CommandItem
             onSelect={() => {
@@ -113,7 +116,7 @@ export function CommandPalette() {
             }}
           >
             <Download />
-            Download resume
+            {t.commandPalette.downloadAction}
           </CommandItem>
         </CommandGroup>
       </CommandList>

@@ -4,38 +4,33 @@ import orderingThumbnail from "../../imports/web-portfolio-2.jpg";
 import { Reveal } from "../components/Reveal";
 import { SpotlightGlow } from "../components/SpotlightGlow";
 import { handleSpotlightMove } from "../lib/spotlight";
+import { useLocale, useTranslations } from "../../i18n/context";
 
 export function Work() {
+  const t = useTranslations();
+  const locale = useLocale();
+
   const projects = [
     {
       id: "cms-migration",
-      title: "CMS Migration for a Multi-Brand Restaurant Platform",
-      description:
-        "Migrated a legacy CMS for 8 restaurant brands — cut unique components from hundreds to dozens and gave non-design teams control over routine updates.",
-      year: "2022-2026",
-      tags: ["Systems Design", "B2B", "QSR"],
-      link: "/case-study/cms-migration",
+      link: `/${locale}/case-study/cms-migration`,
       thumbnail: cmsThumbnail,
+      ...t.work.projects.cms,
     },
     {
       id: "ordering-optimization",
-      title: "Ordering Experience Optimization for a Restaurant Platform",
-      description:
-        "Traced a stuck 6% conversion rate to one screen: forcing location selection before the menu. Fixing that, plus surfacing loyalty features, got it to 8%.",
-      year: "2022-2026",
-      tags: ["Growth", "E-commerce", "QSR"],
-      link: "/case-study/ordering-optimization",
+      link: `/${locale}/case-study/ordering-optimization`,
       thumbnail: orderingThumbnail,
+      ...t.work.projects.ordering,
     },
   ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
       <div className="mb-12 sm:mb-16">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 tracking-tight">Selected work</h1>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 tracking-tight">{t.work.title}</h1>
         <p className="text-base sm:text-lg text-[#666] max-w-3xl leading-relaxed">
-          Two case studies, one recurring theme: a platform outgrowing what
-          it was built on — first the CMS, then the ordering flow.
+          {t.work.subtitle}
         </p>
       </div>
 
@@ -63,9 +58,7 @@ export function Work() {
                     <h2 className="text-2xl tracking-tight group-hover:text-[#666] transition-colors">
                       {project.title}
                     </h2>
-                    <span className="text-sm text-[#888] whitespace-nowrap ml-4">
-                      {project.year}
-                    </span>
+                    <span className="text-sm text-[#888] whitespace-nowrap ml-4">2022-2026</span>
                   </div>
                   <p className="text-[#666] leading-relaxed mb-4">
                     {project.description}
