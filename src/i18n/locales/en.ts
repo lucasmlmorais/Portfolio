@@ -41,6 +41,10 @@ export const en: Dictionary = {
         title: "Built for non-designers too",
         body: "Half the people using what I ship aren't designers: brand managers, marketers, ops staff. If they need me to update a banner, the tool failed.",
       },
+      {
+        title: "Clarity before solutions",
+        body: "Strong products make complex businesses simple to operate, not with more features, but by organizing complexity to support better decisions.",
+      },
     ],
     featuredWorkTitle: "Featured work",
     viewAllProjects: "View all projects",
@@ -48,17 +52,17 @@ export const en: Dictionary = {
       cms: {
         title: "CMS Migration for a Multi-Brand Restaurant Platform",
         blurb:
-          "Migrated a legacy CMS for 8 restaurant brands. Cut unique components by 60% and let marketing teams update content without design in the loop.",
+          "Migrated a legacy CMS for 3 restaurant brands. Cut unique components by 60% and let marketing teams update content without design in the loop.",
       },
       ordering: {
         title: "Ordering Experience Optimization for a Restaurant Platform",
         blurb:
-          "Moved location selection out of the critical path. Overall conversion went from 6% to 8%.",
+          "Built a browsing menu that skips the location requirement and sped up that step for people who decide to order. Overall conversion went from 6% to 8%.",
       },
     },
     aboutTitle: "About",
     bioParagraphs: [
-      "I've spent most of the last five years inside one product: a restaurant platform that grew from one brand to eight while I rebuilt the systems underneath it. Before that, digital transformation consulting and conversational design for chatbots.",
+      "I've spent most of the last five years inside one product: a multi-brand restaurant platform where I helped unify systems that used to be fragmented by brand. Before that, digital transformation consulting and conversational design for chatbots.",
       "I like the parts of design work that are a little unglamorous: the CMS nobody wants to touch, the edge case in the system, the screen everyone assumed was fine until the data said otherwise.",
     ],
     moreAboutMe: "More about my background",
@@ -71,13 +75,13 @@ export const en: Dictionary = {
       cms: {
         title: "CMS Migration for a Multi-Brand Restaurant Platform",
         description:
-          "Migrated a legacy CMS for 8 restaurant brands. Cut unique components from hundreds to dozens and gave non-design teams control over routine updates.",
+          "Migrated a legacy CMS for 3 restaurant brands. Cut unique components from hundreds to dozens and gave non-design teams control over routine updates.",
         tags: ["Systems Design", "B2B", "QSR"],
       },
       ordering: {
         title: "Ordering Experience Optimization for a Restaurant Platform",
         description:
-          "Traced a stuck 6% conversion rate to one screen: forcing location selection before the menu. Fixing that, plus surfacing loyalty features, got it to 8%.",
+          "Traced a stuck 6% conversion rate to the start of the ordering flow, which required a location before users could even browse the menu. A browsing menu without that requirement, plus surfacing loyalty features, got it to 8%.",
         tags: ["Growth", "E-commerce", "QSR"],
       },
     },
@@ -85,8 +89,8 @@ export const en: Dictionary = {
   about: {
     title: "About",
     bioParagraphs: [
-      "I came into design sideways: a bachelor's in graphic design, another in information systems management, and a postgrad in interaction design squeezed in between. That mix is probably why I gravitate toward the parts of product work that are more plumbing than polish: component systems, edge cases, the CMS nobody wants to touch.",
-      "Most of the last five years have been inside one restaurant platform, watching it grow from one brand to eight while I rebuilt the systems underneath it. Before that, I spent two years designing conversational flows for Brazil's largest chatbot consultancy, for clients ranging from computer hardware to pulp and paper.",
+      "I came into design after two years studying information systems management at UFMG: I switched in 2014 to a bachelor's in graphic design, and later added a postgrad in interaction design. That technical background is probably why I gravitate toward the parts of product work that are more plumbing than polish: component systems, edge cases, the CMS nobody wants to touch.",
+      "Most of the last five years have been inside one multi-brand restaurant platform, unifying systems that used to run separately for each brand in the group. Before that, I spent two years designing conversational flows for Brazil's largest chatbot consultancy, for clients ranging from computer hardware to pulp and paper.",
     ],
     education: {
       heading: "Education",
@@ -100,11 +104,6 @@ export const en: Dictionary = {
           degree: "Bachelor's Degree in Graphic Design",
           school: "Universidade do Estado de Minas Gerais",
           years: "2014 - 2018",
-        },
-        {
-          degree: "Bachelor's Degree in Information Systems Management",
-          school: "Universidade Federal de Minas Gerais",
-          years: "2011 - 2013",
         },
       ],
     },
@@ -225,11 +224,6 @@ export const en: Dictionary = {
         school: "Universidade do Estado de Minas Gerais",
         years: "2014 - 2018",
       },
-      {
-        degree: "Bachelor's Degree in Information Systems Management",
-        school: "Universidade Federal de Minas Gerais",
-        years: "2011 - 2013",
-      },
     ],
     skillsHeading: "Skills & Capabilities",
     skills: [
@@ -245,6 +239,10 @@ export const en: Dictionary = {
       {
         label: "Certifications",
         body: "Qualitative UX Research, UX Weekend, Design Sprint, Design Thinking Facilitation, B1",
+      },
+      {
+        label: "Technical Background",
+        body: "2 years of Information Systems Management (UFMG, not completed), with a foundation in programming logic and information systems",
       },
       {
         label: "Product Domains",
@@ -299,7 +297,7 @@ export const en: Dictionary = {
   caseStudyCMS: {
     title: "CMS Migration for a Multi-Brand Restaurant Platform",
     subtitle:
-      "A legacy CMS was holding back 8 restaurant brands. I used the migration to rethink multi-brand design from the ground up, instead of just porting old components to new tech.",
+      "A legacy CMS was holding back 3 restaurant brands. I used the migration to rethink multi-brand design from the ground up, instead of just porting old components to new tech.",
     overview: {
       heading: "Overview",
       yearLabel: "Year",
@@ -308,7 +306,7 @@ export const en: Dictionary = {
       role: "Lead Product Designer",
       domainLabel: "Domain",
       domain: "QSR, B2B, Systems Design",
-      body: "A multi-brand restaurant platform ran on a legacy CMS approaching end-of-life, hard to maintain, limited, and blocking growth. The migration became a chance to redesign the component architecture itself, so brands with distinct identities could share one system instead of each duplicating their own.",
+      body: "Three brands in the group (Outback, Carrabba's, and Bonefish Grill) ran on a legacy CMS approaching end-of-life, hard to maintain and blocking growth. The migration was a chance to redesign the component architecture: a shared visual system and editing workflow across brands, with separate applications per brand to preserve each one's specific features.",
     },
     problem: {
       heading: "Problem",
@@ -322,8 +320,8 @@ export const en: Dictionary = {
       intro: "As Lead Product Designer:",
       items: [
         "Audited the existing CMS to find migration requirements and pain points",
-        "Designed a component architecture that could support multiple brands on shared foundations",
-        "Worked with engineering to define technical constraints and the rollout plan",
+        "Designed the system's visual components and variants, balancing standardization across brands with identity flexibility",
+        "Worked side by side with the platform specialist engineer responsible for the content, page, and component editing workflow",
         "Worked with brand and marketing teams to validate the new workflows",
       ],
     },
@@ -331,7 +329,7 @@ export const en: Dictionary = {
       heading: "Constraints",
       items: [
         "Zero downtime: the sites serve millions of customers",
-        "Support 8+ brands with distinct visual identities",
+        "Support 3 brands with distinct visual identities, each as its own application in the codebase",
         "Non-technical teams need to update content independently",
         "Limited engineering time meant a phased rollout",
       ],
@@ -343,7 +341,7 @@ export const en: Dictionary = {
       boxes: [
         {
           title: "Component variant system",
-          body: "A flexible architecture with themeable variants replaced hundreds of one-off components with a few dozen. And made the system more flexible, not less.",
+          body: "A flexible architecture with themeable variants, shared across the 3 brands, replaced hundreds of one-off components with a few dozen. And made the system more flexible, not less.",
         },
         {
           title: "Self-service tooling",
@@ -366,6 +364,10 @@ export const en: Dictionary = {
           title: "Migration-friendly",
           body: "Mapped every old component to its replacement, with clear upgrade paths for anything deprecated.",
         },
+        {
+          title: "Separate applications, shared visual system",
+          body: "Each brand ran as its own application in the codebase, which allowed for brand-specific features when it made sense: Bonefish Grill has table reservations, while Outback and Carrabba's use a waitlist instead. The component system and content editing workflow were shared; the code for each application wasn't.",
+        },
       ],
     },
     outcomes: {
@@ -374,7 +376,7 @@ export const en: Dictionary = {
         { stat: "75%", label: "Fewer design requests for routine content updates" },
         { stat: "60%", label: "Fewer unique components to maintain across all brands" },
         { stat: "100%", label: "Migration completed with zero customer-facing downtime" },
-        { stat: "3 weeks", label: "Time to launch a new brand, down from months" },
+        { stat: "6 → 3 months", label: "Time to launch a brand on the new CMS: 6 months for Outback, the first and most involved, 3 months each for Carrabba's and Bonefish Grill" },
       ],
       closing:
         "The design team stopped fielding routine update requests and started spending that time on new brand launches instead.",
@@ -385,14 +387,14 @@ export const en: Dictionary = {
         "A technical migration is a chance for a strategic redesign, not just a lift-and-shift",
         "Tooling for non-designers has to be powerful and forgiving, different from designing for end customers",
         "Loop in brand and engineering from day one, or pay for it in rework later",
-        "A hard constraint (support 8+ brands) forced a better, more scalable system than an easier brief would have",
+        "A real constraint (separate applications per brand, but a shared component system) forced a more careful balance between standardization and flexibility than an easier brief would have",
       ],
     },
   },
   caseStudyOrdering: {
     title: "Ordering Experience Optimization for a Restaurant Platform",
     subtitle:
-      "Conversion was stuck at 6%. I traced it to one screen (forcing location selection before the menu) and fixing it got conversion to 8%.",
+      "Conversion was stuck at 6%. I built a browsing menu that skips the location requirement and sped up that step with remembered selections and smart defaults when people decide to order, which got conversion to 8%.",
     overview: {
       heading: "Overview",
       yearLabel: "Year",
@@ -407,7 +409,7 @@ export const en: Dictionary = {
       heading: "Problem",
       paragraphs: [
         "Logged-in users converted significantly better than anonymous visitors, but they were a small share of total traffic.",
-        "The bigger issue was the ordering flow itself: users had to pick a restaurant location before they could even see the menu. That one decision point, unrelated to what they actually wanted to order, was quietly costing conversions. Overall conversion sat at 6%, well below industry benchmarks.",
+        "The bigger issue was at the start of the ordering flow: seeing the menu with real prices and promotions required picking a location first, even for people who just wanted to browse what the brand offered. That friction, ahead of any purchase decision, was quietly costing conversions. Overall conversion sat at 6%, well below industry benchmarks.",
         "The loyalty program had real value and low adoption, because it wasn't surfaced anywhere that mattered. Registration and login had already drawn criticism in heuristic reviews, and logged-in features were buried where new users would never find them.",
       ],
     },
@@ -444,8 +446,8 @@ export const en: Dictionary = {
           body: "Reordering, favorites, and loyalty benefits moved out of buried pages into the primary ordering flow, visible to anonymous users too, next to a clear prompt to create an account.",
         },
         {
-          title: "Bypassed the location friction point",
-          body: "Let people browse the menu first. Location moved to checkout, pre-filled from geolocation or order history.",
+          title: "Open menu, location only when it's time to order",
+          body: "Built a general menu that doesn't require a location, for people who just want to browse. When someone decides to order, location is still required, but now with remembered previous selections and smart defaults, right on the location and fulfillment method screen.",
         },
         {
           title: "Made the value visible",

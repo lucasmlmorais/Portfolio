@@ -41,6 +41,10 @@ export const es: Dictionary = {
         title: "Pensado también para quien no diseña",
         body: "La mitad de las personas que usan lo que diseño no son diseñadoras: gerentes de marca, marketing, operaciones. Si necesitan que yo les cambie un banner, la herramienta falló.",
       },
+      {
+        title: "Claridad antes que solución",
+        body: "Los productos fuertes hacen que negocios complejos sean simples de operar, no con más funcionalidades, sino organizando la complejidad para apoyar mejores decisiones.",
+      },
     ],
     featuredWorkTitle: "Proyectos destacados",
     viewAllProjects: "Ver todos los proyectos",
@@ -48,17 +52,17 @@ export const es: Dictionary = {
       cms: {
         title: "Migración de CMS para una plataforma multimarca de restaurantes",
         blurb:
-          "Migré un CMS heredado para 8 marcas de restaurantes. Reduje los componentes únicos en 60% y dejé que marketing actualizara contenido sin pasar por diseño.",
+          "Migré un CMS heredado para 3 marcas de restaurantes. Reduje los componentes únicos en 60% y dejé que marketing actualizara contenido sin pasar por diseño.",
       },
       ordering: {
         title: "Optimización del flujo de pedidos para una plataforma de restaurantes",
         blurb:
-          "Saqué la selección de ubicación del camino crítico. La conversión general pasó de 6% a 8%.",
+          "Creé un menú de consulta sin exigir ubicación y agilicé esa elección para quien decide pedir. La conversión general pasó de 6% a 8%.",
       },
     },
     aboutTitle: "Sobre mí",
     bioParagraphs: [
-      "Pasé la mayor parte de los últimos cinco años dentro de un mismo producto: una plataforma de restaurantes que creció de una marca a ocho mientras yo reconstruía los sistemas por debajo. Antes de eso, consultoría en transformación digital y diseño conversacional para chatbots.",
+      "Pasé la mayor parte de los últimos cinco años dentro de un mismo producto: una plataforma de restaurantes multimarca donde ayudé a unificar sistemas que antes estaban fragmentados por marca. Antes de eso, consultoría en transformación digital y diseño conversacional para chatbots.",
       "Me gustan las partes del diseño que son un poco menos glamorosas: el CMS que nadie quiere tocar, el caso límite en el sistema, la pantalla que todos daban por buena hasta que los datos dijeron lo contrario.",
     ],
     moreAboutMe: "Más sobre mi trayectoria",
@@ -71,13 +75,13 @@ export const es: Dictionary = {
       cms: {
         title: "Migración de CMS para una plataforma multimarca de restaurantes",
         description:
-          "Migré un CMS heredado para 8 marcas de restaurantes. Reduje los componentes únicos de cientos a decenas y le di a los equipos sin perfil de diseño control sobre las actualizaciones de rutina.",
+          "Migré un CMS heredado para 3 marcas de restaurantes. Reduje los componentes únicos de cientos a decenas y le di a los equipos sin perfil de diseño control sobre las actualizaciones de rutina.",
         tags: ["Sistemas de diseño", "B2B", "QSR"],
       },
       ordering: {
         title: "Optimización del flujo de pedidos para una plataforma de restaurantes",
         description:
-          "Rastreé una conversión estancada en 6% hasta una sola pantalla: obligar a elegir ubicación antes de ver el menú. Corregir eso, y visibilizar el programa de lealtad, la llevó a 8%.",
+          "Rastreé una conversión estancada en 6% hasta el inicio del flujo de pedido, que exigía ubicación antes incluso de poder navegar el menú. Un menú de consulta sin esa exigencia, más visibilizar el programa de lealtad, la llevó a 8%.",
         tags: ["Crecimiento", "E-commerce", "QSR"],
       },
     },
@@ -85,8 +89,8 @@ export const es: Dictionary = {
   about: {
     title: "Sobre mí",
     bioParagraphs: [
-      "Llegué al diseño por un camino un poco torcido: una licenciatura en diseño gráfico, otra en gestión de sistemas de información, y en el medio un posgrado en diseño de interacción. Esa mezcla probablemente explica por qué me atraen las partes del trabajo de producto que son más plomería que pulido: sistemas de componentes, casos límite, el CMS que nadie quiere tocar.",
-      "La mayor parte de los últimos cinco años estuve dentro de una misma plataforma de restaurantes, viéndola crecer de una marca a ocho mientras reconstruía los sistemas por debajo. Antes de eso, pasé dos años diseñando flujos conversacionales para la consultora de chatbots más grande de Brasil, con clientes que iban desde hardware de computadoras hasta pulpa y papel.",
+      "Llegué al diseño después de dos años estudiando gestión de sistemas de información en la UFMG: cambié en 2014 a una licenciatura en diseño gráfico y, más tarde, hice un posgrado en diseño de interacción. Esa base técnica probablemente explica por qué me atraen las partes del trabajo de producto que son más plomería que pulido: sistemas de componentes, casos límite, el CMS que nadie quiere tocar.",
+      "La mayor parte de los últimos cinco años estuve dentro de una misma plataforma de restaurantes multimarca, unificando sistemas que antes funcionaban por separado para cada marca del grupo. Antes de eso, pasé dos años diseñando flujos conversacionales para la consultora de chatbots más grande de Brasil, con clientes que iban desde hardware de computadoras hasta pulpa y papel.",
     ],
     education: {
       heading: "Formación académica",
@@ -100,11 +104,6 @@ export const es: Dictionary = {
           degree: "Licenciatura en Diseño Gráfico",
           school: "Universidade do Estado de Minas Gerais",
           years: "2014 - 2018",
-        },
-        {
-          degree: "Licenciatura en Gestión de Sistemas de Información",
-          school: "Universidade Federal de Minas Gerais",
-          years: "2011 - 2013",
         },
       ],
     },
@@ -225,11 +224,6 @@ export const es: Dictionary = {
         school: "Universidade do Estado de Minas Gerais",
         years: "2014 - 2018",
       },
-      {
-        degree: "Licenciatura en Gestión de Sistemas de Información",
-        school: "Universidade Federal de Minas Gerais",
-        years: "2011 - 2013",
-      },
     ],
     skillsHeading: "Habilidades y capacidades",
     skills: [
@@ -245,6 +239,10 @@ export const es: Dictionary = {
       {
         label: "Certificaciones",
         body: "Qualitative UX Research, UX Weekend, Design Sprint, Design Thinking Facilitation, B1",
+      },
+      {
+        label: "Base técnica",
+        body: "2 años de Gestión de Sistemas de Información (UFMG, no concluida), con base en lógica de programación y sistemas de información",
       },
       {
         label: "Dominios de producto",
@@ -299,7 +297,7 @@ export const es: Dictionary = {
   caseStudyCMS: {
     title: "Migración de CMS para una plataforma multimarca de restaurantes",
     subtitle:
-      "Un CMS heredado le estaba poniendo un techo a 8 marcas de restaurantes. Usé la migración para repensar el diseño multimarca desde cero, en lugar de solo trasladar los componentes viejos a tecnología nueva.",
+      "Un CMS heredado le estaba poniendo un techo a 3 marcas de restaurantes. Usé la migración para repensar el diseño multimarca desde cero, en lugar de solo trasladar los componentes viejos a tecnología nueva.",
     overview: {
       heading: "Panorama general",
       yearLabel: "Año",
@@ -308,7 +306,7 @@ export const es: Dictionary = {
       role: "Lead Product Designer",
       domainLabel: "Dominio",
       domain: "QSR, B2B, sistemas de diseño",
-      body: "Una plataforma multimarca de restaurantes operaba sobre un CMS heredado que estaba llegando al final de su vida útil, difícil de mantener, limitado, y un freno para el crecimiento. La migración se convirtió en la oportunidad de rediseñar la arquitectura de componentes en sí, para que marcas con identidades distintas pudieran compartir un mismo sistema en lugar de duplicar cada una el suyo.",
+      body: "Tres marcas del grupo (Outback, Carrabba's y Bonefish Grill) operaban sobre un CMS heredado que estaba llegando al final de su vida útil, difícil de mantener y un freno para el crecimiento. La migración fue la oportunidad de rediseñar la arquitectura de componentes: un sistema visual y un flujo de edición compartidos entre las marcas, con aplicaciones separadas por marca para preservar las funcionalidades específicas de cada una.",
     },
     problem: {
       heading: "El problema",
@@ -322,8 +320,8 @@ export const es: Dictionary = {
       intro: "Como Lead Product Designer:",
       items: [
         "Audité el CMS existente para identificar los requisitos de la migración y los puntos de dolor",
-        "Diseñé una arquitectura de componentes capaz de dar soporte a múltiples marcas sobre bases compartidas",
-        "Trabajé con ingeniería para definir las restricciones técnicas y el plan de implementación",
+        "Diseñé los componentes y variantes visuales del sistema, equilibrando estandarización entre marcas con flexibilidad de identidad",
+        "Trabajé codo a codo con el ingeniero especialista en la plataforma, responsable del flujo de edición de contenido y componentes",
         "Trabajé con los equipos de marca y marketing para validar los nuevos flujos de trabajo",
       ],
     },
@@ -331,7 +329,7 @@ export const es: Dictionary = {
       heading: "Restricciones",
       items: [
         "Cero tiempo de inactividad: los sitios atienden a millones de clientes",
-        "Dar soporte a más de 8 marcas con identidades visuales distintas",
+        "Dar soporte a 3 marcas con identidades visuales distintas, cada una como aplicación propia en el código",
         "Los equipos sin perfil técnico necesitan poder actualizar contenido de forma independiente",
         "El tiempo limitado de ingeniería obligaba a una implementación por fases",
       ],
@@ -343,7 +341,7 @@ export const es: Dictionary = {
       boxes: [
         {
           title: "Sistema de variantes de componentes",
-          body: "Una arquitectura flexible con variantes tematizables reemplazó cientos de componentes hechos a medida por unas pocas decenas. Y volvió al sistema más flexible, no menos.",
+          body: "Una arquitectura flexible con variantes tematizables, compartida por las 3 marcas, reemplazó cientos de componentes hechos a medida por unas pocas decenas. Y volvió al sistema más flexible, no menos.",
         },
         {
           title: "Herramientas de autoservicio",
@@ -366,6 +364,10 @@ export const es: Dictionary = {
           title: "Pensado para la migración",
           body: "Mapeé cada componente antiguo con su reemplazo, con rutas de actualización claras para todo lo que quedaba en desuso.",
         },
+        {
+          title: "Aplicaciones separadas, sistema visual compartido",
+          body: "Cada marca funcionaba como una aplicación propia en el código, lo que permitía funcionalidades exclusivas cuando tenía sentido: Bonefish Grill tiene reserva de mesa, mientras que Outback y Carrabba's usan lista de espera. El sistema de componentes y el flujo de edición de contenido eran compartidos; el código de cada aplicación, no.",
+        },
       ],
     },
     outcomes: {
@@ -374,7 +376,7 @@ export const es: Dictionary = {
         { stat: "75%", label: "Menos solicitudes de diseño para actualizaciones de contenido de rutina" },
         { stat: "60%", label: "Menos componentes únicos que mantener en todas las marcas" },
         { stat: "100%", label: "Migración completada sin tiempo de inactividad para los clientes" },
-        { stat: "3 semanas", label: "Tiempo para lanzar una marca nueva, antes de meses" },
+        { stat: "6 → 3 meses", label: "Tiempo para lanzar una marca en el nuevo CMS: 6 meses para Outback, la primera y más compleja, 3 meses cada una para Carrabba's y Bonefish Grill" },
       ],
       closing:
         "El equipo de diseño dejó de atender solicitudes de actualización de rutina y empezó a invertir ese tiempo en el lanzamiento de nuevas marcas.",
@@ -385,14 +387,14 @@ export const es: Dictionary = {
         "Una migración técnica es una oportunidad para un rediseño estratégico, no solo un traslado de lo mismo a otro lado",
         "Las herramientas para quienes no diseñan tienen que ser potentes y tolerantes al error, algo distinto a diseñar para el cliente final",
         "Involucrar a marca e ingeniería desde el primer día, o pagarlo después en retrabajo",
-        "Una restricción difícil (dar soporte a más de 8 marcas) obligó a un sistema mejor y más escalable de lo que un brief más cómodo habría logrado",
+        "Una restricción real (aplicaciones separadas por marca, pero con sistema de componentes compartido) obligó a un equilibrio más cuidadoso entre estandarización y flexibilidad de lo que un brief más cómodo habría logrado",
       ],
     },
   },
   caseStudyOrdering: {
     title: "Optimización del flujo de pedidos para una plataforma de restaurantes",
     subtitle:
-      "La conversión estaba estancada en 6%. La rastreé hasta una sola pantalla (obligar a elegir ubicación antes del menú) y corregirla llevó la conversión a 8%.",
+      "La conversión estaba estancada en 6%. Creé un menú de consulta sin exigir ubicación y agilicé esa elección con memoria de selecciones anteriores y valores por defecto inteligentes al momento de pedir, lo que llevó la conversión a 8%.",
     overview: {
       heading: "Panorama general",
       yearLabel: "Año",
@@ -407,7 +409,7 @@ export const es: Dictionary = {
       heading: "El problema",
       paragraphs: [
         "Los usuarios con sesión iniciada convertían significativamente mejor que los visitantes anónimos, pero representaban una porción pequeña del tráfico total.",
-        "El problema más grande estaba en el propio flujo de pedidos: había que elegir una ubicación de restaurante antes incluso de poder ver el menú. Ese único punto de decisión, ajeno a lo que la persona realmente quería pedir, estaba costando conversiones en silencio. La conversión general se mantenía en 6%, muy por debajo del promedio de la industria.",
+        "El problema más grande estaba al inicio del flujo de pedidos: ver el menú con precios y promociones reales requería elegir la ubicación primero, incluso para quienes solo querían dar un vistazo a lo que ofrecía la marca. Esa fricción, antes de cualquier decisión de compra, estaba costando conversiones en silencio. La conversión general se mantenía en 6%, muy por debajo del promedio de la industria.",
         "El programa de lealtad tenía valor real y poca adopción, porque no se mostraba en ningún momento que importara. El registro y el login ya habían recibido críticas en revisiones heurísticas, y las funciones de usuario logueado estaban enterradas donde los usuarios nuevos jamás las encontrarían.",
       ],
     },
@@ -442,6 +444,14 @@ export const es: Dictionary = {
         {
           title: "Funciones de usuario logueado integradas al flujo principal",
           body: "Volver a pedir, favoritos y beneficios de lealtad salieron de páginas escondidas para entrar al flujo principal de pedidos, visibles también para usuarios anónimos, junto a una invitación clara a crear una cuenta.",
+        },
+        {
+          title: "Menú abierto, ubicación solo al pedir",
+          body: "Creé un menú general, sin exigir ubicación, para quien solo quiere navegar. Cuando la persona decide pedir, la ubicación sigue siendo necesaria, pero ahora con memoria de selecciones anteriores y valores por defecto inteligentes, directo en la pantalla de ubicación y método de recepción.",
+        },
+        {
+          title: "Valor hecho visible",
+          body: "Agregué momentos a lo largo del flujo que mostraban el ahorro real y la conveniencia de tener sesión iniciada, en vez de pedir una cuenta basándome en la confianza.",
         },
       ],
     },
