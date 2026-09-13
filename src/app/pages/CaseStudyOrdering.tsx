@@ -5,9 +5,11 @@ import { ImageModal } from "../components/ImageModal";
 import { Reveal } from "../components/Reveal";
 import { ReadingProgress } from "../components/ReadingProgress";
 import { useLocale, useTranslations } from "../../i18n/context";
-import orderingHero from "../../imports/ordering_experience.png";
+import orderingHero from "../../imports/case-studies/ordering-intro.png";
+import orderingShowcase1 from "../../imports/case-studies/ordering-showcase-1.png";
+import orderingShowcase2 from "../../imports/case-studies/ordering-showcase-2.png";
 import orderingProblem from "../../imports/problem_2.png";
-import orderingSolution from "../../imports/solution_2.png";
+import orderingSolution from "../../imports/case-studies/ordering-strategic-diagram.png";
 
 export function CaseStudyOrdering() {
   const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
@@ -66,6 +68,38 @@ export function CaseStudyOrdering() {
           </div>
         </div>
         <p className="text-[#666] leading-relaxed">{t.overview.body}</p>
+      </section>
+      </Reveal>
+
+      {/* Showcase */}
+      <Reveal>
+      <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            className="rounded-sm overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
+            onClick={() => setModalImage({ src: orderingShowcase1, alt: t.title })}
+          >
+            <img
+              src={orderingShowcase1}
+              alt={t.title}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+          <div
+            className="rounded-sm overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
+            onClick={() => setModalImage({ src: orderingShowcase2, alt: t.title })}
+          >
+            <img
+              src={orderingShowcase2}
+              alt={t.title}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
       </section>
       </Reveal>
 

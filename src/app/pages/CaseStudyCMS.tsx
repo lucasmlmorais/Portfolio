@@ -5,7 +5,9 @@ import { ImageModal } from "../components/ImageModal";
 import { Reveal } from "../components/Reveal";
 import { ReadingProgress } from "../components/ReadingProgress";
 import { useLocale, useTranslations } from "../../i18n/context";
-import cmsHero from "../../imports/hero.jpg";
+import cmsHero from "../../imports/case-studies/cms-intro.png";
+import cmsShowcase1 from "../../imports/case-studies/cms-showcase-1.png";
+import cmsShowcase2 from "../../imports/case-studies/cms-showcase-2.png";
 import cmsProblem from "../../imports/problem.jpg";
 import cmsComponentSystem from "../../imports/component_system.png";
 
@@ -66,6 +68,38 @@ export function CaseStudyCMS() {
           </div>
         </div>
         <p className="text-[#666] leading-relaxed">{t.overview.body}</p>
+      </section>
+      </Reveal>
+
+      {/* Showcase */}
+      <Reveal>
+      <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            className="rounded-sm overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
+            onClick={() => setModalImage({ src: cmsShowcase1, alt: t.title })}
+          >
+            <img
+              src={cmsShowcase1}
+              alt={t.title}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+          <div
+            className="rounded-sm overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
+            onClick={() => setModalImage({ src: cmsShowcase2, alt: t.title })}
+          >
+            <img
+              src={cmsShowcase2}
+              alt={t.title}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
       </section>
       </Reveal>
 
