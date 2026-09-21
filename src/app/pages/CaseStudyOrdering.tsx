@@ -9,7 +9,24 @@ import orderingHero from "../../imports/case-studies/ordering-intro.png";
 import orderingShowcase1 from "../../imports/case-studies/ordering-showcase-1.png";
 import orderingShowcase2 from "../../imports/case-studies/ordering-showcase-2.png";
 import orderingProblem from "../../imports/problem_2.png";
-import orderingSolution from "../../imports/case-studies/ordering-strategic-diagram.png";
+import orderingStrategicDesktopEn from "../../imports/case-studies/ordering-strategic-desktop-en.png";
+import orderingStrategicDesktopPtBr from "../../imports/case-studies/ordering-strategic-desktop-pt-br.png";
+import orderingStrategicDesktopEs from "../../imports/case-studies/ordering-strategic-desktop-es.png";
+import orderingStrategicMobileEn from "../../imports/case-studies/ordering-strategic-mobile-en.png";
+import orderingStrategicMobilePtBr from "../../imports/case-studies/ordering-strategic-mobile-pt-br.png";
+import orderingStrategicMobileEs from "../../imports/case-studies/ordering-strategic-mobile-es.png";
+
+const orderingStrategicDesktop = {
+  "pt-br": orderingStrategicDesktopPtBr,
+  en: orderingStrategicDesktopEn,
+  es: orderingStrategicDesktopEs,
+};
+
+const orderingStrategicMobile = {
+  "pt-br": orderingStrategicMobilePtBr,
+  en: orderingStrategicMobileEn,
+  es: orderingStrategicMobileEs,
+};
 
 export function CaseStudyOrdering() {
   const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
@@ -171,14 +188,21 @@ export function CaseStudyOrdering() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: orderingSolution, alt: t.approach.boxes[0].title })}
+          onClick={() => setModalImage({ src: orderingStrategicDesktop[locale], alt: t.approach.boxes[0].title })}
         >
           <img
-            src={orderingSolution}
+            src={orderingStrategicMobile[locale]}
             alt={t.approach.boxes[0].title}
             loading="lazy"
             decoding="async"
-            className="w-full h-auto"
+            className="w-full h-auto md:hidden"
+          />
+          <img
+            src={orderingStrategicDesktop[locale]}
+            alt={t.approach.boxes[0].title}
+            loading="lazy"
+            decoding="async"
+            className="hidden w-full h-auto md:block"
           />
         </div>
       </section>

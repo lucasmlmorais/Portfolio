@@ -9,7 +9,24 @@ import cmsHero from "../../imports/case-studies/cms-intro.png";
 import cmsShowcase1 from "../../imports/case-studies/cms-showcase-1.png";
 import cmsShowcase2 from "../../imports/case-studies/cms-showcase-2.png";
 import cmsProblem from "../../imports/problem.jpg";
-import cmsComponentSystem from "../../imports/component_system.png";
+import cmsStrategicDesktopEn from "../../imports/case-studies/cms-strategic-desktop-en.png";
+import cmsStrategicDesktopPtBr from "../../imports/case-studies/cms-strategic-desktop-pt-br.png";
+import cmsStrategicDesktopEs from "../../imports/case-studies/cms-strategic-desktop-es.png";
+import cmsStrategicMobileEn from "../../imports/case-studies/cms-strategic-mobile-en.png";
+import cmsStrategicMobilePtBr from "../../imports/case-studies/cms-strategic-mobile-pt-br.png";
+import cmsStrategicMobileEs from "../../imports/case-studies/cms-strategic-mobile-es.png";
+
+const cmsStrategicDesktop = {
+  "pt-br": cmsStrategicDesktopPtBr,
+  en: cmsStrategicDesktopEn,
+  es: cmsStrategicDesktopEs,
+};
+
+const cmsStrategicMobile = {
+  "pt-br": cmsStrategicMobilePtBr,
+  en: cmsStrategicMobileEn,
+  es: cmsStrategicMobileEs,
+};
 
 export function CaseStudyCMS() {
   const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
@@ -171,14 +188,21 @@ export function CaseStudyCMS() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: cmsComponentSystem, alt: t.approach.boxes[0].title })}
+          onClick={() => setModalImage({ src: cmsStrategicDesktop[locale], alt: t.approach.boxes[0].title })}
         >
           <img
-            src={cmsComponentSystem}
+            src={cmsStrategicMobile[locale]}
             alt={t.approach.boxes[0].title}
             loading="lazy"
             decoding="async"
-            className="w-full h-auto"
+            className="w-full h-auto md:hidden"
+          />
+          <img
+            src={cmsStrategicDesktop[locale]}
+            alt={t.approach.boxes[0].title}
+            loading="lazy"
+            decoding="async"
+            className="hidden w-full h-auto md:block"
           />
         </div>
       </section>
