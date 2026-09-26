@@ -129,7 +129,7 @@ export interface Dictionary {
   resume: {
     downloadPdf: string;
     summaryHeading: string;
-    summary: string;
+    summary: string[];
     experienceHeading: string;
     jobs: {
       title: string;

@@ -24,9 +24,9 @@ export const ptBR: Dictionary = {
   },
   home: {
     openToWork: "Aberto a novas oportunidades",
-    heroTitle: "Projeto sistemas para plataformas que cresceram além da própria estrutura.",
+    heroTitle: "Eu crio produtos digitais que fazem negócios complexos parecerem simples.",
     heroSubtitle:
-      "Oito anos liderando product design para restaurant tech e plataformas B2B, reduzindo centenas de componentes a poucas dezenas e transformando uma tela ruim em 33% mais conversão.",
+      "Oito anos transformando plataformas complexas, experiências fragmentadas e restrições de negócio em produtos mais fáceis de usar, escalar e crescer.",
     howIWorkTitle: "Como eu trabalho",
     pillars: [
       {
@@ -61,8 +61,9 @@ export const ptBR: Dictionary = {
     },
     aboutTitle: "Sobre",
     bioParagraphs: [
-      "Passei a maior parte dos últimos cinco anos dentro de um único produto: uma plataforma de restaurantes multimarca onde ajudei a unificar sistemas que antes eram fragmentados por marca. Antes disso, consultoria em transformação digital e design conversacional para chatbots.",
-      "Gosto das partes do trabalho de design que são um pouco menos glamorosas: o CMS que ninguém quer mexer, o caso extremo no sistema, a tela que todo mundo achava que estava ótima até o dado provar o contrário.",
+      "Nos últimos cinco anos, ajudei a evoluir uma plataforma de restaurantes multimarca de experiências fragmentadas para um ecossistema de produto mais conectado e escalável. Antes disso, atuei com consultoria em transformação digital e design conversacional.",
+      "Costumo gravitar para os problemas escondidos por baixo da interface: sistemas legados, dependências bagunçadas, casos extremos ignorados e experiências que parecem boas até os dados dizerem o contrário.",
+      "É aí que faço meu melhor trabalho: dar sentido à complexidade e transformá-la em produtos mais claros para os usuários e mais sustentáveis para o negócio.",
     ],
     moreAboutMe: "Mais sobre minha trajetória",
   },
@@ -88,8 +89,11 @@ export const ptBR: Dictionary = {
   about: {
     title: "Sobre",
     bioParagraphs: [
-      "Cheguei ao design depois de dois anos em Gestão de Sistemas de Informação na UFMG: troquei de curso em 2014 para Design Gráfico e, mais tarde, fiz uma pós em Design de Interação. Essa base técnica provavelmente explica por que eu gravito para as partes do trabalho de produto que são mais encanamento do que acabamento: sistemas de componentes, casos extremos, o CMS que ninguém quer mexer.",
-      "A maior parte dos últimos cinco anos foi dentro de uma única plataforma de restaurantes multimarca, unificando sistemas que antes rodavam separados para cada marca do grupo. Antes disso, passei dois anos desenhando fluxos conversacionais para a maior consultoria de chatbots do Brasil, com clientes que iam de hardware de computador a papel e celulose.",
+      "Cheguei ao design por um caminho um pouco fora do comum. Passei dois anos estudando Gestão de Sistemas de Informação na universidade federal do meu estado antes de trocar para Design Gráfico em 2014, e depois me especializar em Design de Interação.",
+      "Essa bagagem técnica ainda molda a forma como eu trabalho. Costumo gravitar para as partes do design de produto que ficam por baixo da interface: sistemas, dependências, casos extremos, arquitetura de componentes e aquela página ocasional que todo mundo secretamente espera que outra pessoa resolva.",
+      "Nos últimos cinco anos, trabalhei a fundo dentro de uma plataforma de restaurantes multimarca, ajudando a aproximar produtos e sistemas que antes evoluíam separadamente entre as marcas. Isso envolveu desde consolidar experiências e sistemas de design compartilhados até revisitar jornadas-chave quando pesquisa ou dados de produto mostravam que elas não funcionavam tão bem quanto a gente pensava.",
+      "Antes disso, passei dois anos desenhando experiências conversacionais em uma das maiores consultorias de chatbot do Brasil, atuando em setores como tecnologia, varejo e papel e celulose.",
+      "Ao longo dessas experiências, percebi que faço meu melhor trabalho quando o problema não está bem contido numa tela. Gosto de entender como as peças se conectam, encontrar onde a complexidade está atrapalhando e transformar isso em algo mais claro tanto para os usuários quanto para os times que constroem o produto.",
     ],
     education: {
       heading: "Formação",
@@ -158,8 +162,10 @@ export const ptBR: Dictionary = {
   resume: {
     downloadPdf: "Baixar PDF",
     summaryHeading: "Resumo Profissional",
-    summary:
-      "Product designer com 8 anos de experiência entre restaurant tech, e-commerce B2B e interfaces conversacionais. Atualmente focado em design systems e growth para uma plataforma de restaurantes multimarca, o tipo de trabalho que é mais encanamento do que acabamento e que geralmente compensa depois.",
+    summary: [
+      "Product Designer Sênior com 8 anos de experiência trabalhando em produtos digitais complexos nas áreas de restaurant tech, plataformas B2B e interfaces conversacionais.",
+      "Nos últimos cinco anos, trabalhei em uma plataforma de restaurantes multimarca, aproximando experiências e sistemas que antes eram separados, usando pesquisa, experimentos e dados de produto para melhorar jornadas-chave do cliente.",
+    ],
     experienceHeading: "Experiência Profissional",
     jobs: [
       {

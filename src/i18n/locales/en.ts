@@ -24,9 +24,9 @@ export const en: Dictionary = {
   },
   home: {
     openToWork: "Open to new opportunities",
-    heroTitle: "I design systems for platforms that have outgrown themselves.",
+    heroTitle: "I design digital products that make complex businesses feel simple.",
     heroSubtitle:
-      "Eight years leading product design for restaurant tech and B2B platforms, cutting hundreds of components down to dozens and turning one bad screen into 33% more conversion.",
+      "Eight years turning complex platforms, fragmented experiences, and business constraints into products that are easier to use, scale, and grow.",
     howIWorkTitle: "How I work",
     pillars: [
       {
@@ -62,8 +62,9 @@ export const en: Dictionary = {
     },
     aboutTitle: "About",
     bioParagraphs: [
-      "I've spent most of the last five years inside one product: a multi-brand restaurant platform where I helped unify systems that used to be fragmented by brand. Before that, digital transformation consulting and conversational design for chatbots.",
-      "I like the parts of design work that are a little unglamorous: the CMS nobody wants to touch, the edge case in the system, the screen everyone assumed was fine until the data said otherwise.",
+      "For the past five years, I've helped evolve a multi-brand restaurant platform from fragmented experiences into a more connected and scalable product ecosystem. My earlier work spans digital transformation consulting and conversational design.",
+      "I tend to gravitate toward the problems hiding underneath the interface: legacy systems, messy dependencies, overlooked edge cases, and experiences that seem fine until the data says otherwise.",
+      "That's where I do my best work: making sense of complexity and turning it into products that are clearer for users and more sustainable for the business.",
     ],
     moreAboutMe: "More about my background",
   },
@@ -89,8 +90,11 @@ export const en: Dictionary = {
   about: {
     title: "About",
     bioParagraphs: [
-      "I came into design after two years studying information systems management at UFMG: I switched in 2014 to a bachelor's in graphic design, and later added a postgrad in interaction design. That technical background is probably why I gravitate toward the parts of product work that are more plumbing than polish: component systems, edge cases, the CMS nobody wants to touch.",
-      "Most of the last five years have been inside one multi-brand restaurant platform, unifying systems that used to run separately for each brand in the group. Before that, I spent two years designing conversational flows for Brazil's largest chatbot consultancy, for clients ranging from computer hardware to pulp and paper.",
+      "I came into design through a slightly unusual path. I spent two years studying Information Systems Management at my state's federal university before switching to Graphic Design in 2014, later specializing in Interaction Design.",
+      "That technical background still shapes the way I work. I tend to gravitate toward the parts of product design that sit beneath the interface: systems, dependencies, edge cases, component architecture, and the occasional webpage everyone quietly hopes someone else will deal with.",
+      "For the past five years, I've worked deeply within a multi-brand restaurant platform, helping bring together products and systems that had previously evolved separately across different brands. That has meant everything from consolidating shared experiences and design systems to revisiting key journeys when research or product data showed they weren't working as well as we thought.",
+      "Before that, I spent two years designing conversational experiences at one of Brazil's largest chatbot consultancies, working across industries including technology, retail, and pulp and paper.",
+      "Across those roles, I've found that I do my best work when the problem isn't neatly contained in a screen. I enjoy understanding how the pieces connect, finding where complexity is getting in the way, and turning it into something clearer for both users and the teams building the product.",
     ],
     education: {
       heading: "Education",
@@ -159,8 +163,10 @@ export const en: Dictionary = {
   resume: {
     downloadPdf: "Download PDF",
     summaryHeading: "Professional Summary",
-    summary:
-      "Product designer with 8 years across restaurant tech, B2B e-commerce, and conversational interfaces. Currently focused on design systems and growth for a multi-brand restaurant platform, the kind of work that's more plumbing than polish and usually pays off later.",
+    summary: [
+      "Senior Product Designer with 8 years of experience working on complex digital products across restaurant tech, B2B platforms, and conversational interfaces.",
+      "For the past five years, I've worked on a multi-brand restaurant platform, bringing previously separate experiences and systems closer together while using research, experiments, and product data to improve key customer journeys.",
+    ],
     experienceHeading: "Professional Experience",
     jobs: [
       {

@@ -21,7 +21,14 @@ export function Resume() {
       {/* Professional Summary */}
       <section className="mb-12 sm:mb-16 pb-12 sm:pb-16 border-b border-[#e5e5e0]">
         <h2 className="text-xl sm:text-2xl mb-4 sm:mb-6 tracking-tight">{t.resume.summaryHeading}</h2>
-        <p className="text-[#666] leading-relaxed">{t.resume.summary}</p>
+        {t.resume.summary.map((paragraph, i) => (
+          <p
+            key={paragraph}
+            className={`text-[#666] leading-relaxed ${i < t.resume.summary.length - 1 ? "mb-4" : ""}`}
+          >
+            {paragraph}
+          </p>
+        ))}
       </section>
 
       {/* Experience */}
