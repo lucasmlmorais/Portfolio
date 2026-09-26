@@ -8,13 +8,21 @@ import { useLocale, useTranslations } from "../../i18n/context";
 import orderingHero from "../../imports/case-studies/ordering-intro.png";
 import orderingShowcase1 from "../../imports/case-studies/ordering-showcase-1.png";
 import orderingShowcase2 from "../../imports/case-studies/ordering-showcase-2.png";
-import orderingProblem from "../../imports/problem_2.png";
+import orderingProblemEn from "../../imports/case-studies/ordering-problem-en.png";
+import orderingProblemPtBr from "../../imports/case-studies/ordering-problem-pt-br.png";
+import orderingProblemEs from "../../imports/case-studies/ordering-problem-es.png";
 import orderingStrategicDesktopEn from "../../imports/case-studies/ordering-strategic-desktop-en.png";
 import orderingStrategicDesktopPtBr from "../../imports/case-studies/ordering-strategic-desktop-pt-br.png";
 import orderingStrategicDesktopEs from "../../imports/case-studies/ordering-strategic-desktop-es.png";
 import orderingStrategicMobileEn from "../../imports/case-studies/ordering-strategic-mobile-en.png";
 import orderingStrategicMobilePtBr from "../../imports/case-studies/ordering-strategic-mobile-pt-br.png";
 import orderingStrategicMobileEs from "../../imports/case-studies/ordering-strategic-mobile-es.png";
+
+const orderingProblemImage = {
+  "pt-br": orderingProblemPtBr,
+  en: orderingProblemEn,
+  es: orderingProblemEs,
+};
 
 const orderingStrategicDesktop = {
   "pt-br": orderingStrategicDesktopPtBr,
@@ -131,10 +139,10 @@ export function CaseStudyOrdering() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: orderingProblem, alt: t.problem.heading })}
+          onClick={() => setModalImage({ src: orderingProblemImage[locale], alt: t.problem.heading })}
         >
           <img
-            src={orderingProblem}
+            src={orderingProblemImage[locale]}
             alt={t.problem.heading}
             loading="lazy"
             decoding="async"
