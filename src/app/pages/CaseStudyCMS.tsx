@@ -8,13 +8,21 @@ import { useLocale, useTranslations } from "../../i18n/context";
 import cmsHero from "../../imports/case-studies/cms-intro.png";
 import cmsShowcase1 from "../../imports/case-studies/cms-showcase-1.png";
 import cmsShowcase2 from "../../imports/case-studies/cms-showcase-2.png";
-import cmsProblem from "../../imports/problem.jpg";
+import cmsProblemEn from "../../imports/case-studies/cms-problem-en.png";
+import cmsProblemPtBr from "../../imports/case-studies/cms-problem-pt-br.png";
+import cmsProblemEs from "../../imports/case-studies/cms-problem-es.png";
 import cmsStrategicDesktopEn from "../../imports/case-studies/cms-strategic-desktop-en.png";
 import cmsStrategicDesktopPtBr from "../../imports/case-studies/cms-strategic-desktop-pt-br.png";
 import cmsStrategicDesktopEs from "../../imports/case-studies/cms-strategic-desktop-es.png";
 import cmsStrategicMobileEn from "../../imports/case-studies/cms-strategic-mobile-en.png";
 import cmsStrategicMobilePtBr from "../../imports/case-studies/cms-strategic-mobile-pt-br.png";
 import cmsStrategicMobileEs from "../../imports/case-studies/cms-strategic-mobile-es.png";
+
+const cmsProblemImage = {
+  "pt-br": cmsProblemPtBr,
+  en: cmsProblemEn,
+  es: cmsProblemEs,
+};
 
 const cmsStrategicDesktop = {
   "pt-br": cmsStrategicDesktopPtBr,
@@ -131,10 +139,10 @@ export function CaseStudyCMS() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: cmsProblem, alt: t.problem.heading })}
+          onClick={() => setModalImage({ src: cmsProblemImage[locale], alt: t.problem.heading })}
         >
           <img
-            src={cmsProblem}
+            src={cmsProblemImage[locale]}
             alt={t.problem.heading}
             loading="lazy"
             decoding="async"
