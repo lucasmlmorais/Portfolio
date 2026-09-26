@@ -6,6 +6,7 @@ import { Reveal } from "../components/Reveal";
 import { ReadingProgress } from "../components/ReadingProgress";
 import { useLocale, useTranslations } from "../../i18n/context";
 import cmsHero from "../../imports/case-studies/cms-intro.png";
+import cmsHeroMobile from "../../imports/case-studies/cms-intro-mobile.png";
 import cmsShowcase1 from "../../imports/case-studies/cms-showcase-1.png";
 import cmsShowcase2 from "../../imports/case-studies/cms-showcase-2.png";
 import cmsProblemDesktopEn from "../../imports/case-studies/cms-problem-en.png";
@@ -80,7 +81,8 @@ export function CaseStudyCMS() {
         className="rounded-sm mb-12 sm:mb-16 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
         onClick={() => setModalImage({ src: cmsHero, alt: t.title })}
       >
-        <img src={cmsHero} alt={t.title} className="w-full h-auto" />
+        <img src={cmsHeroMobile} alt={t.title} className="w-full h-auto md:hidden" />
+        <img src={cmsHero} alt={t.title} className="hidden w-full h-auto md:block" />
       </div>
 
       {/* Overview */}

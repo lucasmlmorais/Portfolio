@@ -6,6 +6,7 @@ import { Reveal } from "../components/Reveal";
 import { ReadingProgress } from "../components/ReadingProgress";
 import { useLocale, useTranslations } from "../../i18n/context";
 import orderingHero from "../../imports/case-studies/ordering-intro.png";
+import orderingHeroMobile from "../../imports/case-studies/ordering-intro-mobile.png";
 import orderingShowcase1 from "../../imports/case-studies/ordering-showcase-1.png";
 import orderingShowcase2 from "../../imports/case-studies/ordering-showcase-2.png";
 import orderingProblemDesktopEn from "../../imports/case-studies/ordering-problem-en.png";
@@ -80,7 +81,8 @@ export function CaseStudyOrdering() {
         className="rounded-sm mb-12 sm:mb-16 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
         onClick={() => setModalImage({ src: orderingHero, alt: t.title })}
       >
-        <img src={orderingHero} alt={t.title} className="w-full h-auto" />
+        <img src={orderingHeroMobile} alt={t.title} className="w-full h-auto md:hidden" />
+        <img src={orderingHero} alt={t.title} className="hidden w-full h-auto md:block" />
       </div>
 
       {/* Overview */}
