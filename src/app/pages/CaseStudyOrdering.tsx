@@ -8,9 +8,12 @@ import { useLocale, useTranslations } from "../../i18n/context";
 import orderingHero from "../../imports/case-studies/ordering-intro.png";
 import orderingShowcase1 from "../../imports/case-studies/ordering-showcase-1.png";
 import orderingShowcase2 from "../../imports/case-studies/ordering-showcase-2.png";
-import orderingProblemEn from "../../imports/case-studies/ordering-problem-en.png";
-import orderingProblemPtBr from "../../imports/case-studies/ordering-problem-pt-br.png";
-import orderingProblemEs from "../../imports/case-studies/ordering-problem-es.png";
+import orderingProblemDesktopEn from "../../imports/case-studies/ordering-problem-en.png";
+import orderingProblemDesktopPtBr from "../../imports/case-studies/ordering-problem-pt-br.png";
+import orderingProblemDesktopEs from "../../imports/case-studies/ordering-problem-es.png";
+import orderingProblemMobileEn from "../../imports/case-studies/ordering-problem-mobile-en.png";
+import orderingProblemMobilePtBr from "../../imports/case-studies/ordering-problem-mobile-pt-br.png";
+import orderingProblemMobileEs from "../../imports/case-studies/ordering-problem-mobile-es.png";
 import orderingStrategicDesktopEn from "../../imports/case-studies/ordering-strategic-desktop-en.png";
 import orderingStrategicDesktopPtBr from "../../imports/case-studies/ordering-strategic-desktop-pt-br.png";
 import orderingStrategicDesktopEs from "../../imports/case-studies/ordering-strategic-desktop-es.png";
@@ -18,10 +21,16 @@ import orderingStrategicMobileEn from "../../imports/case-studies/ordering-strat
 import orderingStrategicMobilePtBr from "../../imports/case-studies/ordering-strategic-mobile-pt-br.png";
 import orderingStrategicMobileEs from "../../imports/case-studies/ordering-strategic-mobile-es.png";
 
-const orderingProblemImage = {
-  "pt-br": orderingProblemPtBr,
-  en: orderingProblemEn,
-  es: orderingProblemEs,
+const orderingProblemDesktop = {
+  "pt-br": orderingProblemDesktopPtBr,
+  en: orderingProblemDesktopEn,
+  es: orderingProblemDesktopEs,
+};
+
+const orderingProblemMobile = {
+  "pt-br": orderingProblemMobilePtBr,
+  en: orderingProblemMobileEn,
+  es: orderingProblemMobileEs,
 };
 
 const orderingStrategicDesktop = {
@@ -139,14 +148,21 @@ export function CaseStudyOrdering() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: orderingProblemImage[locale], alt: t.problem.heading })}
+          onClick={() => setModalImage({ src: orderingProblemDesktop[locale], alt: t.problem.heading })}
         >
           <img
-            src={orderingProblemImage[locale]}
+            src={orderingProblemMobile[locale]}
             alt={t.problem.heading}
             loading="lazy"
             decoding="async"
-            className="w-full h-auto"
+            className="w-full h-auto md:hidden"
+          />
+          <img
+            src={orderingProblemDesktop[locale]}
+            alt={t.problem.heading}
+            loading="lazy"
+            decoding="async"
+            className="hidden w-full h-auto md:block"
           />
         </div>
       </section>

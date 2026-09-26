@@ -8,9 +8,12 @@ import { useLocale, useTranslations } from "../../i18n/context";
 import cmsHero from "../../imports/case-studies/cms-intro.png";
 import cmsShowcase1 from "../../imports/case-studies/cms-showcase-1.png";
 import cmsShowcase2 from "../../imports/case-studies/cms-showcase-2.png";
-import cmsProblemEn from "../../imports/case-studies/cms-problem-en.png";
-import cmsProblemPtBr from "../../imports/case-studies/cms-problem-pt-br.png";
-import cmsProblemEs from "../../imports/case-studies/cms-problem-es.png";
+import cmsProblemDesktopEn from "../../imports/case-studies/cms-problem-en.png";
+import cmsProblemDesktopPtBr from "../../imports/case-studies/cms-problem-pt-br.png";
+import cmsProblemDesktopEs from "../../imports/case-studies/cms-problem-es.png";
+import cmsProblemMobileEn from "../../imports/case-studies/cms-problem-mobile-en.png";
+import cmsProblemMobilePtBr from "../../imports/case-studies/cms-problem-mobile-pt-br.png";
+import cmsProblemMobileEs from "../../imports/case-studies/cms-problem-mobile-es.png";
 import cmsStrategicDesktopEn from "../../imports/case-studies/cms-strategic-desktop-en.png";
 import cmsStrategicDesktopPtBr from "../../imports/case-studies/cms-strategic-desktop-pt-br.png";
 import cmsStrategicDesktopEs from "../../imports/case-studies/cms-strategic-desktop-es.png";
@@ -18,10 +21,16 @@ import cmsStrategicMobileEn from "../../imports/case-studies/cms-strategic-mobil
 import cmsStrategicMobilePtBr from "../../imports/case-studies/cms-strategic-mobile-pt-br.png";
 import cmsStrategicMobileEs from "../../imports/case-studies/cms-strategic-mobile-es.png";
 
-const cmsProblemImage = {
-  "pt-br": cmsProblemPtBr,
-  en: cmsProblemEn,
-  es: cmsProblemEs,
+const cmsProblemDesktop = {
+  "pt-br": cmsProblemDesktopPtBr,
+  en: cmsProblemDesktopEn,
+  es: cmsProblemDesktopEs,
+};
+
+const cmsProblemMobile = {
+  "pt-br": cmsProblemMobilePtBr,
+  en: cmsProblemMobileEn,
+  es: cmsProblemMobileEs,
 };
 
 const cmsStrategicDesktop = {
@@ -139,14 +148,21 @@ export function CaseStudyCMS() {
         ))}
         <div
           className="rounded-sm mt-8 overflow-hidden cursor-pointer hover:opacity-95 transition-opacity"
-          onClick={() => setModalImage({ src: cmsProblemImage[locale], alt: t.problem.heading })}
+          onClick={() => setModalImage({ src: cmsProblemDesktop[locale], alt: t.problem.heading })}
         >
           <img
-            src={cmsProblemImage[locale]}
+            src={cmsProblemMobile[locale]}
             alt={t.problem.heading}
             loading="lazy"
             decoding="async"
-            className="w-full h-auto"
+            className="w-full h-auto md:hidden"
+          />
+          <img
+            src={cmsProblemDesktop[locale]}
+            alt={t.problem.heading}
+            loading="lazy"
+            decoding="async"
+            className="hidden w-full h-auto md:block"
           />
         </div>
       </section>
