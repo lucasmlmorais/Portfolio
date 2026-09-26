@@ -30,20 +30,20 @@ export const ptBR: Dictionary = {
     howIWorkTitle: "Como eu trabalho",
     pillars: [
       {
-        title: "Sistemas antes de telas",
-        body: "Prefiro entregar um componente com dez configurações a dez telas feitas na unha. Mais lento no primeiro dia, mais rápido nos próximos dois anos.",
+        title: "Sistemas em vez de soluções pontuais",
+        body: "Prefiro construir um componente flexível a dez telas resolvendo o mesmo problema de formas ligeiramente diferentes. Pode levar mais tempo no início, mas deixa o produto mais fácil de manter, estender e repassar depois.",
       },
       {
-        title: "Dado antes de opinião",
-        body: "O melhor redesign que entreguei esse ano não começou com um palpite. Começou com um número de abandono no funil. Procuro esse número antes de abrir o Figma.",
+        title: "Comece pelo sinal",
+        body: "Não redesenho algo só porque parece errado. Primeiro olho onde os usuários estão abandonando, o que mudou de comportamento e o que os dados dizem. Às vezes a tela está ok e o problema real começa dois passos antes.",
       },
       {
-        title: "Feito também para quem não é designer",
-        body: "Metade de quem usa o que eu entrego não é designer: gerente de marca, marketing, time de operação. Se essa pessoa precisa de mim pra trocar um banner, a ferramenta falhou.",
+        title: "Design para quem opera o produto",
+        body: "Boa parte do que eu entrego acaba nas mãos de marketing, gerentes de marca e times de operação. Se essas pessoas precisam de um designer ou desenvolvedor toda vez que o conteúdo muda, não resolvemos o problema todo.",
       },
       {
-        title: "Clareza antes de solução",
-        body: "Produtos fortes deixam negócios complexos simples de operar, não com mais funcionalidades, mas organizando a complexidade para apoiar decisões melhores.",
+        title: "Simplifique o sistema primeiro",
+        body: "Produtos complexos raramente ficam mais simples adicionando mais uma funcionalidade. Eu começo pelas regras por baixo: o que depende do quê, quais decisões realmente importam e o que pode ser removido. Muitas vezes o melhor jeito de simplificar a interface é simplificar o sistema por trás dela.",
       },
     ],
     featuredWorkTitle: "Trabalhos em destaque",

@@ -30,20 +30,20 @@ export const es: Dictionary = {
     howIWorkTitle: "Cómo trabajo",
     pillars: [
       {
-        title: "Sistemas antes que pantallas",
-        body: "Prefiero entregar un componente con diez configuraciones que diez pantallas hechas a la medida. Más lento el primer día, más rápido los próximos dos años.",
+        title: "Sistemas antes que soluciones puntuales",
+        body: "Prefiero construir un componente flexible que diez pantallas resolviendo el mismo problema de formas ligeramente distintas. Puede tardar más al principio, pero hace que el producto sea más fácil de mantener, extender y entregar después.",
       },
       {
-        title: "Datos antes que opiniones",
-        body: "El mejor rediseño que entregué este año no empezó con una corazonada. Empezó con un número de abandono en el embudo. Busco ese número antes de abrir Figma.",
+        title: "Empieza por la señal",
+        body: "No rediseño algo solo porque se siente mal. Primero miro dónde están abandonando los usuarios, qué comportamiento cambió y qué dicen los datos. A veces la pantalla está bien y el problema real empieza dos pasos antes.",
       },
       {
-        title: "Pensado también para quien no diseña",
-        body: "La mitad de las personas que usan lo que diseño no son diseñadoras: gerentes de marca, marketing, operaciones. Si necesitan que yo les cambie un banner, la herramienta falló.",
+        title: "Diseña para quienes operan el producto",
+        body: "Buena parte de lo que entrego termina en manos de marketing, gerentes de marca y equipos de operaciones. Si necesitan a un diseñador o desarrollador cada vez que cambia el contenido, no resolvimos el problema completo.",
       },
       {
-        title: "Claridad antes que solución",
-        body: "Los productos fuertes hacen que negocios complejos sean simples de operar, no con más funcionalidades, sino organizando la complejidad para apoyar mejores decisiones.",
+        title: "Simplifica primero el sistema",
+        body: "Los productos complejos rara vez se simplifican agregando otra función. Empiezo por las reglas de fondo: qué depende de qué, qué decisiones realmente importan y qué se puede eliminar. Muchas veces la mejor forma de simplificar la interfaz es simplificar el sistema detrás de ella.",
       },
     ],
     featuredWorkTitle: "Proyectos destacados",

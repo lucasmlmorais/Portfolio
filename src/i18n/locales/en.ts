@@ -30,20 +30,20 @@ export const en: Dictionary = {
     howIWorkTitle: "How I work",
     pillars: [
       {
-        title: "Systems over screens",
-        body: "I'd rather ship one component with ten configurations than ten one-off screens. Slower on day one, faster for the next two years.",
+        title: "Systems over one-offs",
+        body: "I'd rather build one flexible component than ten screens solving the same problem slightly differently. It may take longer upfront, but it makes the product easier to maintain, extend, and hand off later.",
       },
       {
-        title: "Data before opinions",
-        body: "The best redesign I shipped this year didn't start with a hunch. It started with a drop-off number in the funnel. I look for that number before I open Figma.",
+        title: "Start with the signal",
+        body: "I don't redesign something just because it feels wrong. First I look at where users are dropping off, what behavior changed, and what the data says. Sometimes the screen is fine and the real problem starts two steps earlier.",
       },
       {
-        title: "Built for non-designers too",
-        body: "Half the people using what I ship aren't designers: brand managers, marketers, ops staff. If they need me to update a banner, the tool failed.",
+        title: "Design for the people running the product",
+        body: "A lot of what I ship ends up in the hands of marketers, brand managers, and ops teams. If they need a designer or developer every time content changes, we haven't solved the whole problem.",
       },
       {
-        title: "Clarity before solutions",
-        body: "Strong products make complex businesses simple to operate, not with more features, but by organizing complexity to support better decisions.",
+        title: "Simplify the system first",
+        body: "Complex products rarely get simpler by adding another feature. I start with the rules underneath: what depends on what, which decisions actually matter, and what can be removed. Often the best way to simplify the interface is to simplify the system behind it.",
       },
     ],
     featuredWorkTitle: "Featured work",
