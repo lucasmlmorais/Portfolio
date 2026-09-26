@@ -311,7 +311,7 @@ export const en: Dictionary = {
     problem: {
       heading: "Problem",
       paragraphs: [
-        "The legacy CMS was hard to maintain and approaching deprecation. Brand managers, marketers, and ops staff had no way to update content without pulling in a designer.",
+        "The legacy CMS was hard to maintain and approaching deprecation. Its rigid layouts gave brand managers, marketers, and ops staff little flexibility, so even routine updates often meant waiting on the platform's developers.",
         "Each brand also ran its own custom components: duplicated work, slower brand launches, and a system that couldn't keep up with the company's growth.",
       ],
     },

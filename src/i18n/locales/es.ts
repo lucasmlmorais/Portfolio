@@ -311,7 +311,7 @@ export const es: Dictionary = {
     problem: {
       heading: "El problema",
       paragraphs: [
-        "El CMS heredado era difícil de mantener y estaba llegando a su deprecación. Los gerentes de marca, marketing y el equipo de operaciones no tenían forma de actualizar contenido sin recurrir a un diseñador.",
+        "El CMS heredado era difícil de mantener y estaba llegando a su deprecación. Sus diseños rígidos le daban poca flexibilidad a los gerentes de marca, marketing y al equipo de operaciones, así que hasta las actualizaciones de rutina solían significar esperar a los desarrolladores de la plataforma.",
         "Cada marca además operaba con sus propios componentes a medida: trabajo duplicado, lanzamientos de marca más lentos, y un sistema que no lograba seguirle el ritmo al crecimiento de la empresa.",
       ],
     },

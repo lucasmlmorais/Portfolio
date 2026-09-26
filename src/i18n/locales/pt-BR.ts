@@ -310,7 +310,7 @@ export const ptBR: Dictionary = {
     problem: {
       heading: "Problema",
       paragraphs: [
-        "O CMS legado era difícil de manter e estava próximo da descontinuação. Gerentes de marca, marketing e operação não tinham como atualizar conteúdo sem acionar um designer.",
+        "O CMS legado era difícil de manter e estava próximo da descontinuação. Seus layouts rígidos davam pouca flexibilidade para gerentes de marca, marketing e operação, então até atualizações de rotina costumavam significar esperar pelos desenvolvedores da plataforma.",
         "Cada marca também rodava seus próprios componentes customizados: trabalho duplicado, lançamentos de marca mais lentos e um sistema que não acompanhava o crescimento da empresa.",
       ],
     },
